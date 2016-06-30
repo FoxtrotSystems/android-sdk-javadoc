@@ -110,9 +110,9 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">RouteStateListener</span>
 extends Object</pre>
 <div class="block">Class to listen for route changed events. Whenever the route state has changed, the new route will
- be emitted via the <a href="../../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-T-"><code>onRouteChanged(OptimizedRoute)</code></a> callback.
+ be emitted via the <a href="../../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>onRouteChanged(OptimizedRoute)</code></a> callback.
  When a route has been finished after calling <a href="../../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#finishRoute-java.lang.String-"><code>FoxtrotSDK.finishRoute(String)</code></a>,
- the next route will be emitted via the <a href="../../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-T-"><code>onRouteChanged(OptimizedRoute)</code></a> callback if and
+ the next route will be emitted via the <a href="../../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>onRouteChanged(OptimizedRoute)</code></a> callback if and
  only if there are more routes. If there are no more remaining routes, then the <a href="../../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onAllRoutesFinished--"><code>onAllRoutesFinished()</code></a>
  callback will be invoked.
 
@@ -209,8 +209,8 @@ extends Object</pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a>&gt;<br>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-T-">onRouteChanged</a></span>(T&nbsp;route)</code>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-">onRouteChanged</a></span>(<a href="../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a>&nbsp;route)</code>
 <div class="block">Invoked when the current route has changed.</div>
 </td>
 </tr>
@@ -269,14 +269,12 @@ extends Object</pre>
 </ul>
 <a name="onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-">
 <!--   -->
-</a><a name="onRouteChanged-T-">
-<!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onRouteChanged</h4>
-<pre>public&nbsp;&lt;T extends <a href="../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a>&gt;&nbsp;void&nbsp;onRouteChanged(@Nonnull
-                                                      T&nbsp;route)</pre>
+<pre>public&nbsp;void&nbsp;onRouteChanged(@Nonnull
+                           <a href="../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a>&nbsp;route)</pre>
 <div class="block">Invoked when the current route has changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
