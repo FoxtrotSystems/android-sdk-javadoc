@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Route</span>
+<pre>public final class <span class="typeNameLabel">Route</span>
 extends Object</pre>
 <div class="block">Describes your route. This object is used to import new routes into Foxtrot. Once a route
  has been imported, a new <a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedRoute</code></a> object will be returned to you via your registered
@@ -132,7 +132,7 @@ extends Object</pre>
      <td>name</td>
      <td>String</td>
      <td>false</td>
-     <td>The name of the route</td>
+     <td>The name of the route. This field cannot have more than 200 characters.</td>
    </tr>
    <tr>
      <td>warehouse</td>
@@ -231,9 +231,9 @@ extends Object</pre>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;</code></td>
+<td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getWaypoints--">getWaypoints</a></span>()</code>
-<div class="block">Return the waypoints of this route</div>
+<div class="block">Return an immutable collection of waypoints for this route</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -328,8 +328,8 @@ public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Wareh
 <li class="blockList">
 <h4>getWaypoints</h4>
 <pre>@Nonnull
-public&nbsp;List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;&nbsp;getWaypoints()</pre>
-<div class="block">Return the waypoints of this route</div>
+public&nbsp;Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;&nbsp;getWaypoints()</pre>
+<div class="block">Return an immutable collection of waypoints for this route</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the waypoints</dd>

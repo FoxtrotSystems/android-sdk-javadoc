@@ -230,8 +230,6 @@
 <dd>
 <div class="block">This is the entry point for the FoxtrotSDK.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryStatus.html#fromInt-int-">fromInt(int)</a></span> - Static method in enum io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route">DeliveryStatus</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryStatus.html#fromString-java.lang.String-">fromString(String)</a></span> - Static method in enum io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route">DeliveryStatus</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -266,11 +264,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getDeliveries--">getDeliveries()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a></dt>
 <dd>
-<div class="block">Return the deliveries for this waypoint.</div>
+<div class="block">Return an immutable list of deliveries for this waypoint.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Waypoint.html#getDeliveries--">getDeliveries()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a></dt>
 <dd>
-<div class="block">Return a list of <a href="io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a> at this <code>Waypoint</code></div>
+<div class="block">Return an immutable list of <a href="io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a></div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getDistanceInMetersFromPreviousWaypoint--">getDistanceInMetersFromPreviousWaypoint()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a></dt>
 <dd>
@@ -282,7 +280,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/TimeWindow.html#getEnd--">getEnd()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route">TimeWindow</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/controllers/auth/LoginError.html#getError--">getError()</a></span> - Method in enum io.foxtrot.android.sdk.controllers.auth.<a href="io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth">LoginError</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/auth/controllers/LoginError.html#getError--">getError()</a></span> - Method in enum io.foxtrot.android.sdk.auth.controllers.<a href="io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers">LoginError</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/state/ErrorState.html#getError--">getError()</a></span> - Method in enum io.foxtrot.android.sdk.state.<a href="io/foxtrot/android/sdk/state/ErrorState.html" title="enum in io.foxtrot.android.sdk.state">ErrorState</a></dt>
 <dd>&nbsp;</dd>
@@ -290,7 +288,7 @@
 <dd>
 <div class="block">Return the estimated time of arrival to this waypoint</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html#getHandler--">getHandler()</a></span> - Method in class io.foxtrot.android.sdk.controllers.auth.<a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth">LoginCallback</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html#getHandler--">getHandler()</a></span> - Method in class io.foxtrot.android.sdk.auth.controllers.<a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a></dt>
 <dd>
 <div class="block">Return the <code>Handler</code> object the callback will get posted to.</div>
 </dd>
@@ -452,10 +450,12 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getTimeWindows--">getTimeWindows()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a></dt>
 <dd>
-<div class="block">Return the time windows for this waypoint.</div>
+<div class="block">Return an immutable list of time windows for this waypoint.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Waypoint.html#getTimeWindows--">getTimeWindows()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Return an immutable list of <a href="io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route"><code>TimeWindow</code></a> objects</div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html#getWarehouse--">getWarehouse()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a></dt>
 <dd>
 <div class="block">Return the warehouse of this route</div>
@@ -468,11 +468,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html#getWaypoints--">getWaypoints()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a></dt>
 <dd>
-<div class="block">Return the list of <a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> for this route.</div>
+<div class="block">Return an immutable list of <a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> for this route.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Route.html#getWaypoints--">getWaypoints()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Route.html" title="class in io.foxtrot.common.core.models.route">Route</a></dt>
 <dd>
-<div class="block">Return the waypoints of this route</div>
+<div class="block">Return an immutable collection of waypoints for this route</div>
 </dd>
 </dl>
 <a name="I:H">
@@ -504,7 +504,7 @@
 <dl>
 <dt><a href="io/foxtrot/android/sdk/package-summary.html">io.foxtrot.android.sdk</a> - package io.foxtrot.android.sdk</dt>
 <dd>&nbsp;</dd>
-<dt><a href="io/foxtrot/android/sdk/controllers/auth/package-summary.html">io.foxtrot.android.sdk.controllers.auth</a> - package io.foxtrot.android.sdk.controllers.auth</dt>
+<dt><a href="io/foxtrot/android/sdk/auth/controllers/package-summary.html">io.foxtrot.android.sdk.auth.controllers</a> - package io.foxtrot.android.sdk.auth.controllers</dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/foxtrot/android/sdk/state/package-summary.html">io.foxtrot.android.sdk.state</a> - package io.foxtrot.android.sdk.state</dt>
 <dd>&nbsp;</dd>
@@ -528,15 +528,15 @@
 <dd>
 <div class="block">Log in the driver to Foxtrot.</div>
 </dd>
-<dt><a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><span class="typeNameLink">LoginCallback</span></a> - Class in <a href="io/foxtrot/android/sdk/controllers/auth/package-summary.html">io.foxtrot.android.sdk.controllers.auth</a></dt>
+<dt><a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><span class="typeNameLink">LoginCallback</span></a> - Class in <a href="io/foxtrot/android/sdk/auth/controllers/package-summary.html">io.foxtrot.android.sdk.auth.controllers</a></dt>
 <dd>
 <div class="block">Class to capture success and error callbacks during the login process</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html#LoginCallback--">LoginCallback()</a></span> - Constructor for class io.foxtrot.android.sdk.controllers.auth.<a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth">LoginCallback</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html#LoginCallback--">LoginCallback()</a></span> - Constructor for class io.foxtrot.android.sdk.auth.controllers.<a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth"><span class="typeNameLink">LoginError</span></a> - Enum in <a href="io/foxtrot/android/sdk/controllers/auth/package-summary.html">io.foxtrot.android.sdk.controllers.auth</a></dt>
+<dt><a href="io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers"><span class="typeNameLink">LoginError</span></a> - Enum in <a href="io/foxtrot/android/sdk/auth/controllers/package-summary.html">io.foxtrot.android.sdk.auth.controllers</a></dt>
 <dd>
-<div class="block">Enumeration for a LoginError emitted by <a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><code>LoginCallback</code></a>.</div>
+<div class="block">Enumeration for a LoginError emitted by <a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#logout--">logout()</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
@@ -552,7 +552,7 @@
 <dd>
 <div class="block">Invoked when all imported routes have been completed</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html#onError-io.foxtrot.android.sdk.controllers.auth.LoginError-">onError(LoginError)</a></span> - Method in class io.foxtrot.android.sdk.controllers.auth.<a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth">LoginCallback</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html#onError-io.foxtrot.android.sdk.auth.controllers.LoginError-">onError(LoginError)</a></span> - Method in class io.foxtrot.android.sdk.auth.controllers.<a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a></dt>
 <dd>
 <div class="block">Invoked upon a failed login.</div>
 </dd>
@@ -564,7 +564,7 @@
 <dd>
 <div class="block">Invoked when the current route has changed.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html#onSuccess--">onSuccess()</a></span> - Method in class io.foxtrot.android.sdk.controllers.auth.<a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth">LoginCallback</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html#onSuccess--">onSuccess()</a></span> - Method in class io.foxtrot.android.sdk.auth.controllers.<a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a></dt>
 <dd>
 <div class="block">Invoked upon successful login.</div>
 </dd>
@@ -606,9 +606,9 @@
 <dd>
 <div class="block">Register the <a href="io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.controllers.auth.LoginCallback-">registerLoginCallback(LoginCallback)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">registerLoginCallback(LoginCallback)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
-<div class="block">Register the <a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><code>LoginCallback</code></a>.</div>
+<div class="block">Register the <a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">registerRouteStateListener(RouteStateListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
@@ -680,7 +680,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Route.Builder.html#setWarehouse-io.foxtrot.common.core.models.route.Warehouse-">setWarehouse(Warehouse)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Route.Builder.html#setWaypoints-java.util.List-">setWaypoints(List&lt;Waypoint&gt;)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Route.Builder.html#setWaypoints-java.util.Collection-">setWaypoints(Collection&lt;Waypoint&gt;)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:T">
@@ -714,9 +714,9 @@
 <dd>
 <div class="block">Unregister the <a href="io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterLoginCallback-io.foxtrot.android.sdk.controllers.auth.LoginCallback-">unregisterLoginCallback(LoginCallback)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">unregisterLoginCallback(LoginCallback)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
-<div class="block">Unregister the <a href="io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><code>LoginCallback</code></a>.</div>
+<div class="block">Unregister the <a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">unregisterRouteStateListener(RouteStateListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
@@ -728,7 +728,7 @@
 </a>
 <h2 class="title">V</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/controllers/auth/LoginError.html#valueOf-java.lang.String-">valueOf(String)</a></span> - Static method in enum io.foxtrot.android.sdk.controllers.auth.<a href="io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth">LoginError</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/auth/controllers/LoginError.html#valueOf-java.lang.String-">valueOf(String)</a></span> - Static method in enum io.foxtrot.android.sdk.auth.controllers.<a href="io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers">LoginError</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </dd>
@@ -744,7 +744,7 @@
 <dd>
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/controllers/auth/LoginError.html#values--">values()</a></span> - Static method in enum io.foxtrot.android.sdk.controllers.auth.<a href="io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth">LoginError</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/auth/controllers/LoginError.html#values--">values()</a></span> - Static method in enum io.foxtrot.android.sdk.auth.controllers.<a href="io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers">LoginError</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum type, in
 the order they are declared.</div>

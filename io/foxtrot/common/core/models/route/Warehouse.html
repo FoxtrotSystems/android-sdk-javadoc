@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Warehouse</span>
+<pre>public final class <span class="typeNameLabel">Warehouse</span>
 extends Object</pre>
 <div class="block">A Warehouse describes the beginning and end point of your route.
 
@@ -130,13 +130,13 @@ extends Object</pre>
      <td>name</td>
      <td>String</td>
      <td>false</td>
-     <td>The name of this warehouse</td>
+     <td>The name of this warehouse. This field cannot have more than 200 characters.</td>
    </tr>
    <tr>
      <td>address</td>
      <td>String</td>
      <td>false</td>
-     <td>The address at this warehouse</td>
+     <td>The address at this warehouse. This field cannot have more than 200 characters.</td>
    </tr>
  </table>
  <p>

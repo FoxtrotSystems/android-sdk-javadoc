@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">FoxtrotSDK</span>
+<pre>public final class <span class="typeNameLabel">FoxtrotSDK</span>
 extends Object</pre>
 <div class="block">This is the entry point for the FoxtrotSDK.
 
@@ -119,7 +119,7 @@ extends Object</pre>
  </code></pre></blockquote></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><code>LoginCallback</code></a>, 
+<dd><a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>, 
 <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a>, 
 <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></dd>
 </dl>
@@ -192,8 +192,8 @@ extends Object</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.controllers.auth.LoginCallback-">registerLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth">LoginCallback</a>&nbsp;loginCallback)</code>
-<div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><code>LoginCallback</code></a>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">registerLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</code>
+<div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -229,8 +229,8 @@ extends Object</pre>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterLoginCallback-io.foxtrot.android.sdk.controllers.auth.LoginCallback-">unregisterLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth">LoginCallback</a>&nbsp;loginCallback)</code>
-<div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><code>LoginCallback</code></a>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">unregisterLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</code>
+<div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
@@ -297,15 +297,16 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>login</h4>
-<pre>public&nbsp;void&nbsp;login(<a href="../../../../io/foxtrot/common/core/models/Driver.html" title="class in io.foxtrot.common.core.models">Driver</a>&nbsp;driver)</pre>
+<pre>public&nbsp;void&nbsp;login(@Nonnull
+                  <a href="../../../../io/foxtrot/common/core/models/Driver.html" title="class in io.foxtrot.common.core.models">Driver</a>&nbsp;driver)</pre>
 <div class="block">Log in the driver to Foxtrot.
 
- This method should be called after <a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.controllers.auth.LoginCallback-"><code>registerLoginCallback(LoginCallback)</code></a></div>
+ This method should be called after <a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-"><code>registerLoginCallback(LoginCallback)</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>driver</code> - the driver to be logged in.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.controllers.auth.LoginCallback-"><code>registerLoginCallback(LoginCallback)</code></a></dd>
+<dd><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-"><code>registerLoginCallback(LoginCallback)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -319,28 +320,30 @@ extends Object</pre>
 <div class="block">Log out the current driver.</div>
 </li>
 </ul>
-<a name="registerLoginCallback-io.foxtrot.android.sdk.controllers.auth.LoginCallback-">
+<a name="registerLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>registerLoginCallback</h4>
-<pre>public&nbsp;void&nbsp;registerLoginCallback(<a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth">LoginCallback</a>&nbsp;loginCallback)</pre>
-<div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><code>LoginCallback</code></a>. This method should be called before <a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#login-io.foxtrot.common.core.models.Driver-"><code>login(Driver)</code></a></div>
+<pre>public&nbsp;void&nbsp;registerLoginCallback(@Nonnull
+                                  <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</pre>
+<div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>. This method should be called before <a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#login-io.foxtrot.common.core.models.Driver-"><code>login(Driver)</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>loginCallback</code> - the login callback</dd>
 </dl>
 </li>
 </ul>
-<a name="unregisterLoginCallback-io.foxtrot.android.sdk.controllers.auth.LoginCallback-">
+<a name="unregisterLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>unregisterLoginCallback</h4>
-<pre>public&nbsp;void&nbsp;unregisterLoginCallback(<a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth">LoginCallback</a>&nbsp;loginCallback)</pre>
-<div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" title="class in io.foxtrot.android.sdk.controllers.auth"><code>LoginCallback</code></a>.</div>
+<pre>public&nbsp;void&nbsp;unregisterLoginCallback(@Nonnull
+                                    <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</pre>
+<div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>loginCallback</code> - the login callback</dd>
@@ -353,7 +356,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>addRoute</h4>
-<pre>public&nbsp;void&nbsp;addRoute(<a href="../../../../io/foxtrot/common/core/models/route/Route.html" title="class in io.foxtrot.common.core.models.route">Route</a>&nbsp;route)</pre>
+<pre>public&nbsp;void&nbsp;addRoute(@Nonnull
+                     <a href="../../../../io/foxtrot/common/core/models/route/Route.html" title="class in io.foxtrot.common.core.models.route">Route</a>&nbsp;route)</pre>
 <div class="block">Import a route to Foxtrot. This method should be called after <a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-"><code>registerRouteStateListener(RouteStateListener)</code></a>.
  The optimized route will be returned through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
 <dl>
@@ -370,7 +374,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>finishRoute</h4>
-<pre>public&nbsp;void&nbsp;finishRoute(String&nbsp;routeId)</pre>
+<pre>public&nbsp;void&nbsp;finishRoute(@Nonnull
+                        String&nbsp;routeId)</pre>
 <div class="block">Finish a route. If there are more routes to be completed, the new route will be returned through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a>
  callback. If there are no more routes, then <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onAllRoutesFinished--"><code>RouteStateListener.onAllRoutesFinished()</code></a> will be invoked.</div>
 <dl>
@@ -385,7 +390,9 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>addDeliveryAttempt</h4>
-<pre>public&nbsp;void&nbsp;addDeliveryAttempt(String&nbsp;deliveryId,
+<pre>public&nbsp;void&nbsp;addDeliveryAttempt(@Nonnull
+                               String&nbsp;deliveryId,
+                               @Nonnull
                                <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt</a>&nbsp;attempt)</pre>
 <div class="block">Add a <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>.
  Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been added, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
@@ -402,7 +409,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>addDeliveryAttempts</h4>
-<pre>public&nbsp;void&nbsp;addDeliveryAttempts(Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt</a>&gt;&nbsp;attempts)</pre>
+<pre>public&nbsp;void&nbsp;addDeliveryAttempts(@Nonnull
+                                Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt</a>&gt;&nbsp;attempts)</pre>
 <div class="block">Convenient method to batch process multiple <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a>.
  Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been added, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
 <dl>
@@ -417,7 +425,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>undoDeliveryAttempt</h4>
-<pre>public&nbsp;void&nbsp;undoDeliveryAttempt(String&nbsp;deliveryId)</pre>
+<pre>public&nbsp;void&nbsp;undoDeliveryAttempt(@Nonnull
+                                String&nbsp;deliveryId)</pre>
 <div class="block">Undo the previous <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> that was made to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>.
  Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been undone, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
 <dl>
@@ -432,7 +441,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>undoDeliveryAttempts</h4>
-<pre>public&nbsp;void&nbsp;undoDeliveryAttempts(List&lt;String&gt;&nbsp;deliveryIds)</pre>
+<pre>public&nbsp;void&nbsp;undoDeliveryAttempts(@Nonnull
+                                 List&lt;String&gt;&nbsp;deliveryIds)</pre>
 <div class="block">Convenient method to batch process multiple undos.
  Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been undone, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
 <dl>
@@ -447,7 +457,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>registerRouteStateListener</h4>
-<pre>public&nbsp;void&nbsp;registerRouteStateListener(<a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</pre>
+<pre>public&nbsp;void&nbsp;registerRouteStateListener(@Nonnull
+                                       <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</pre>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -461,7 +472,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>unregisterRouteStateListener</h4>
-<pre>public&nbsp;void&nbsp;unregisterRouteStateListener(<a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</pre>
+<pre>public&nbsp;void&nbsp;unregisterRouteStateListener(@Nonnull
+                                         <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</pre>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -475,7 +487,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>registerErrorStateListener</h4>
-<pre>public&nbsp;void&nbsp;registerErrorStateListener(<a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a>&nbsp;errorStateListener)</pre>
+<pre>public&nbsp;void&nbsp;registerErrorStateListener(@Nonnull
+                                       <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a>&nbsp;errorStateListener)</pre>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

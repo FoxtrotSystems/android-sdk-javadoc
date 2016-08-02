@@ -138,7 +138,7 @@ var activeTableTab = "activeTableTab";
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>List&lt;? extends <a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDelivery</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getDeliveries--">getDeliveries</a></span>()</code>
-<div class="block">Return the deliveries for this waypoint.</div>
+<div class="block">Return an immutable list of deliveries for this waypoint.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -186,7 +186,7 @@ var activeTableTab = "activeTableTab";
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedTimeWindow.html" title="interface in io.foxtrot.common.core.models.route">OptimizedTimeWindow</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getTimeWindows--">getTimeWindows</a></span>()</code>
-<div class="block">Return the time windows for this waypoint.</div>
+<div class="block">Return an immutable list of time windows for this waypoint.</div>
 </td>
 </tr>
 </table>
@@ -347,7 +347,7 @@ Long&nbsp;getTimeInSecondsFromPreviousWaypoint()</pre>
 <h4>getDeliveries</h4>
 <pre>@Nonnull
 List&lt;? extends <a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDelivery</a>&gt;&nbsp;getDeliveries()</pre>
-<div class="block">Return the deliveries for this waypoint. There will always be at least one delivery.</div>
+<div class="block">Return an immutable list of deliveries for this waypoint. There will always be at least one delivery.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the deliveries</dd>
@@ -362,7 +362,7 @@ List&lt;? extends <a href="../../../../../../io/foxtrot/common/core/models/route
 <h4>getTimeWindows</h4>
 <pre>@Nonnull
 List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedTimeWindow.html" title="interface in io.foxtrot.common.core.models.route">OptimizedTimeWindow</a>&gt;&nbsp;getTimeWindows()</pre>
-<div class="block">Return the time windows for this waypoint. Waypoints are not required.</div>
+<div class="block">Return an immutable list of time windows for this waypoint. Waypoints are not required.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the time windows</dd>

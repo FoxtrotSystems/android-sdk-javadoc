@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Delivery</span>
+<pre>public final class <span class="typeNameLabel">Delivery</span>
 extends Object</pre>
 <div class="block">A Delivery describes the item to be delivered. e.g. 5 bottles of wine, 3 kegs of beer
  <p>
@@ -123,7 +123,7 @@ extends Object</pre>
      <td>product</td>
      <td>String</td>
      <td>true</td>
-     <td>The name of the product</td>
+     <td>The name of the product. This field cannot have more than 200 characters.</td>
    </tr>
    <tr>
      <td>quantity</td>

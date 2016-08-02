@@ -107,7 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Waypoint</span>
+<pre>public final class <span class="typeNameLabel">Waypoint</span>
 extends Object</pre>
 <div class="block">A Waypoint is an object that contains both the customer information, their <a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models"><code>Location</code></a>, and a list of <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a>
  at the location.
@@ -137,13 +137,13 @@ extends Object</pre>
      <td>name</td>
      <td>String</td>
      <td>false</td>
-     <td>The name of this waypoint</td>
+     <td>The name of this waypoint. This field cannot have more than 200 characters.</td>
    </tr>
    <tr>
      <td>address</td>
      <td>String</td>
      <td>false</td>
-     <td>The address at this waypoint</td>
+     <td>The address at this waypoint. This field cannot have more than 200 characters.</td>
    </tr>
    <tr>
      <td>serviceTimeInSeconds</td>
@@ -246,7 +246,7 @@ extends Object</pre>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route">Delivery</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html#getDeliveries--">getDeliveries</a></span>()</code>
-<div class="block">Return a list of <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a> at this <code>Waypoint</code></div>
+<div class="block">Return an immutable list of <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a></div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -269,7 +269,9 @@ extends Object</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route">TimeWindow</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html#getTimeWindows--">getTimeWindows</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html#getTimeWindows--">getTimeWindows</a></span>()</code>
+<div class="block">Return an immutable list of <a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route"><code>TimeWindow</code></a> objects</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -394,10 +396,10 @@ public&nbsp;Long&nbsp;getServiceTimeInSeconds()</pre>
 <h4>getDeliveries</h4>
 <pre>@Nonnull
 public&nbsp;List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route">Delivery</a>&gt;&nbsp;getDeliveries()</pre>
-<div class="block">Return a list of <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a> at this <code>Waypoint</code></div>
+<div class="block">Return an immutable list of <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a list of @{code Delivery}</dd>
+<dd>the deliveries</dd>
 </dl>
 </li>
 </ul>
@@ -409,6 +411,11 @@ public&nbsp;List&lt;<a href="../../../../../../io/foxtrot/common/core/models/rou
 <h4>getTimeWindows</h4>
 <pre>@Nonnull
 public&nbsp;List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route">TimeWindow</a>&gt;&nbsp;getTimeWindows()</pre>
+<div class="block">Return an immutable list of <a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route"><code>TimeWindow</code></a> objects</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the time windows</dd>
+</dl>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">

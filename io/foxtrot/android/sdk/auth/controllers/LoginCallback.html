@@ -48,10 +48,10 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../../../index.html?io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" target="_top">Frames</a></li>
+<li><a href="../../../../../../index.html?io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" target="_top">Frames</a></li>
 <li><a href="LoginCallback.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
@@ -90,7 +90,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">io.foxtrot.android.sdk.controllers.auth</div>
+<div class="subTitle">io.foxtrot.android.sdk.auth.controllers</div>
 <h2 title="Class LoginCallback" class="title">Class LoginCallback</h2>
 </div>
 <div class="contentContainer">
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li>Object</li>
 <li>
 <ul class="inheritance">
-<li>io.foxtrot.android.sdk.controllers.auth.LoginCallback</li>
+<li>io.foxtrot.android.sdk.auth.controllers.LoginCallback</li>
 </ul>
 </li>
 </ul>
@@ -158,7 +158,7 @@ extends Object</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk"><code>FoxtrotSDK</code></a>, 
-<a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth"><code>LoginError</code></a></dd>
+<a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers"><code>LoginError</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -178,7 +178,7 @@ extends Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html#LoginCallback--">LoginCallback</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html#LoginCallback--">LoginCallback</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -197,19 +197,19 @@ extends Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>abstract android.os.Handler</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html#getHandler--">getHandler</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html#getHandler--">getHandler</a></span>()</code>
 <div class="block">Return the <code>Handler</code> object the callback will get posted to.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html#onError-io.foxtrot.android.sdk.controllers.auth.LoginError-">onError</a></span>(<a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth">LoginError</a>&nbsp;loginError)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html#onError-io.foxtrot.android.sdk.auth.controllers.LoginError-">onError</a></span>(<a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers">LoginError</a>&nbsp;loginError)</code>
 <div class="block">Invoked upon a failed login.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginCallback.html#onSuccess--">onSuccess</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html#onSuccess--">onSuccess</a></span>()</code>
 <div class="block">Invoked upon successful login.</div>
 </td>
 </tr>
@@ -258,7 +258,8 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getHandler</h4>
-<pre>public abstract&nbsp;android.os.Handler&nbsp;getHandler()</pre>
+<pre>@NonNull
+public abstract&nbsp;android.os.Handler&nbsp;getHandler()</pre>
 <div class="block">Return the <code>Handler</code> object the callback will get posted to.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -276,19 +277,19 @@ extends Object</pre>
 <div class="block">Invoked upon successful login.</div>
 </li>
 </ul>
-<a name="onError-io.foxtrot.android.sdk.controllers.auth.LoginError-">
+<a name="onError-io.foxtrot.android.sdk.auth.controllers.LoginError-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>onError</h4>
-<pre>public&nbsp;void&nbsp;onError(<a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth">LoginError</a>&nbsp;loginError)</pre>
+<pre>public&nbsp;void&nbsp;onError(<a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers">LoginError</a>&nbsp;loginError)</pre>
 <div class="block">Invoked upon a failed login. The reason will be passed in as an argument</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>loginError</code> - enumeration for the error</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth"><code>LoginError</code></a></dd>
+<dd><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers"><code>LoginError</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -320,10 +321,10 @@ extends Object</pre>
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../io/foxtrot/android/sdk/controllers/auth/LoginError.html" title="enum in io.foxtrot.android.sdk.controllers.auth"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../../../index.html?io/foxtrot/android/sdk/controllers/auth/LoginCallback.html" target="_top">Frames</a></li>
+<li><a href="../../../../../../index.html?io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" target="_top">Frames</a></li>
 <li><a href="LoginCallback.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">
