@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -73,13 +73,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -129,6 +129,25 @@ extends Object</pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected static List&lt;String&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#permissionsRequired">permissionsRequired</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -150,7 +169,7 @@ extends Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#addDeliveryAttempts-java.util.Map-">addDeliveryAttempts</a></span>(Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt</a>&gt;&nbsp;attempts)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#addDeliveryAttempts-java.util.Map-">addDeliveryAttempts</a></span>(Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt</a>&gt;&nbsp;attemptsByDeliveryId)</code>
 <div class="block">Convenient method to batch process multiple <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a>.</div>
 </td>
 </tr>
@@ -162,78 +181,91 @@ extends Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#authorizeDeliveryReattempt-java.lang.String-io.foxtrot.common.core.models.route.DeliveryReattempt-">authorizeDeliveryReattempt</a></span>(String&nbsp;deliveryId,
+                          <a href="../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryReattempt</a>&nbsp;reattempt)</code>
+<div class="block">Add a <a href="../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#REATTEMPT"><code>DeliveryStatus.REATTEMPT</code></a> status to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#authorizeDeliveryReattempts-java.util.Map-">authorizeDeliveryReattempts</a></span>(Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryReattempt</a>&gt;&nbsp;reattemptsByDeliveryId)</code>
+<div class="block">Convenient method to batch process multiple <a href="../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryReattempt</code></a>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#finishRoute-java.lang.String-">finishRoute</a></span>(String&nbsp;routeId)</code>
 <div class="block">Finish a route.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#getInstance--">getInstance</a></span>()</code>
 <div class="block">Access the FoxtrotSDK after it has been setup.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#login-io.foxtrot.common.core.models.Driver-">login</a></span>(<a href="../../../../io/foxtrot/common/core/models/Driver.html" title="class in io.foxtrot.common.core.models">Driver</a>&nbsp;driver)</code>
 <div class="block">Log in the driver to Foxtrot.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#logout--">logout</a></span>()</code>
 <div class="block">Log out the current driver.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerErrorStateListener-io.foxtrot.android.sdk.state.ErrorStateListener-">registerErrorStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a>&nbsp;errorStateListener)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">registerLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">registerRouteStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a></div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#setup-android.content.Context-java.lang.String-">setup</a></span>(android.content.Context&nbsp;context,
      String&nbsp;apiKey)</code>
 <div class="block">Setup the FoxtrotSDK with the application <code>context</code> and <code>apiKey</code></div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttempt-java.lang.String-">undoDeliveryAttempt</a></span>(String&nbsp;deliveryId)</code>
 <div class="block">Undo the previous <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> that was made to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttempts-java.util.List-">undoDeliveryAttempts</a></span>(List&lt;String&gt;&nbsp;deliveryIds)</code>
 <div class="block">Convenient method to batch process multiple undos.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterErrorStateListener-io.foxtrot.android.sdk.state.ErrorStateListener-">unregisterErrorStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a>&nbsp;errorStateListener)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">unregisterLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">unregisterRouteStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a></div>
@@ -255,6 +287,23 @@ extends Object</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="permissionsRequired">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>permissionsRequired</h4>
+<pre>protected static final&nbsp;List&lt;String&gt; permissionsRequired</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -410,12 +459,48 @@ extends Object</pre>
 <li class="blockList">
 <h4>addDeliveryAttempts</h4>
 <pre>public&nbsp;void&nbsp;addDeliveryAttempts(@Nonnull
-                                Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt</a>&gt;&nbsp;attempts)</pre>
-<div class="block">Convenient method to batch process multiple <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a>.
+                                Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt</a>&gt;&nbsp;attemptsByDeliveryId)</pre>
+<div class="block">Convenient method to batch process multiple <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a>. To authorize a reattempt, please use <code>#authorizeReattempts(String)</code>.
  Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been added, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>attempts</code> - mapping from a delivery id to the attempt</dd>
+<dd><code>attemptsByDeliveryId</code> - mapping from a delivery id to the attempt</dd>
+</dl>
+</li>
+</ul>
+<a name="authorizeDeliveryReattempt-java.lang.String-io.foxtrot.common.core.models.route.DeliveryReattempt-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>authorizeDeliveryReattempt</h4>
+<pre>public&nbsp;void&nbsp;authorizeDeliveryReattempt(@Nonnull
+                                       String&nbsp;deliveryId,
+                                       @Nonnull
+                                       <a href="../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryReattempt</a>&nbsp;reattempt)</pre>
+<div class="block">Add a <a href="../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#REATTEMPT"><code>DeliveryStatus.REATTEMPT</code></a> status to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>. A REATTEMPT can only
+ be authorized if there has been a <a href="../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#FAILED"><code>DeliveryStatus.FAILED</code></a> status on a delivery.
+ Once the status has been added, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>deliveryId</code> - the delivery id</dd>
+<dd><code>reattempt</code> - the reattempt</dd>
+</dl>
+</li>
+</ul>
+<a name="authorizeDeliveryReattempts-java.util.Map-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>authorizeDeliveryReattempts</h4>
+<pre>public&nbsp;void&nbsp;authorizeDeliveryReattempts(@Nonnull
+                                        Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryReattempt</a>&gt;&nbsp;reattemptsByDeliveryId)</pre>
+<div class="block">Convenient method to batch process multiple <a href="../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryReattempt</code></a>.
+ Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryReattempt</code></a> has been added, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reattemptsByDeliveryId</code> - mapping from a delivery id to the attempt</dd>
 </dl>
 </li>
 </ul>
@@ -563,13 +648,13 @@ extends Object</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
