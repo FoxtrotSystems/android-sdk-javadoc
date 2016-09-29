@@ -142,15 +142,15 @@ extends Object</pre>
    </tr>
    <tr>
      <td>waypoints</td>
-     <td><code>List&lt;Waypoint&gt;</code></td>
+     <td><code>Collection&lt;Waypoint&gt;</code></td>
      <td>true</td>
-     <td>List of <a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route"><code>Waypoint</code></a> objects. This list must not be empty.</td>
+     <td>Collection of <a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route"><code>Waypoint</code></a> objects. This collection must not be empty.</td>
    </tr>
  </table>
  </p>
 
  <blockquote><pre><code>
-   List&lt;Waypoint&gt; waypoints = ...
+   Collection&lt;Waypoint&gt; waypoints = ...
    Warehouse warehouse = ...
    Route route = Route.builder()
                       .setName("Route A")
