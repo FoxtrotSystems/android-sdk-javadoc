@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -125,24 +125,30 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>DeliveryCode</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getDeliveryCode--">getDeliveryCode</a></span>()</code>
+<div class="block">Return the delivery code attributed to this status</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getId--">getId</a></span>()</code>
 <div class="block">Return the id for this attempt</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getNotes--">getNotes</a></span>()</code>
 <div class="block">Return the note attributed to this status</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route">DeliveryStatus</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getStatus--">getStatus</a></span>()</code>
 <div class="block">Return the <a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route"><code>DeliveryStatus</code></a></div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>org.joda.time.DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getTimestamp--">getTimestamp</a></span>()</code>
 <div class="block">Return the timestamp for this delivery status</div>
@@ -211,7 +217,7 @@ org.joda.time.DateTime&nbsp;getTimestamp()</pre>
 <a name="getNotes--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getNotes</h4>
 <pre>@Nullable
@@ -220,6 +226,21 @@ String&nbsp;getNotes()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the note</dd>
+</dl>
+</li>
+</ul>
+<a name="getDeliveryCode--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getDeliveryCode</h4>
+<pre>@Nullable
+DeliveryCode&nbsp;getDeliveryCode()</pre>
+<div class="block">Return the delivery code attributed to this status</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the delivery code</dd>
 </dl>
 </li>
 </ul>

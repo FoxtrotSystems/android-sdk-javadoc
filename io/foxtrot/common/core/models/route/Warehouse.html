@@ -129,13 +129,13 @@ extends Object</pre>
    <tr>
      <td>name</td>
      <td>String</td>
-     <td>false</td>
+     <td>true</td>
      <td>The name of this warehouse. This field cannot have more than 200 characters.</td>
    </tr>
    <tr>
      <td>address</td>
      <td>String</td>
-     <td>false</td>
+     <td>true</td>
      <td>The address at this warehouse. This field cannot have more than 200 characters.</td>
    </tr>
  </table>
@@ -279,7 +279,7 @@ public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/Location.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>@Nullable
+<pre>@Nonnull
 public&nbsp;String&nbsp;getName()</pre>
 <div class="block">Return the name of this <code>Warehouse</code>.</div>
 <dl>
@@ -294,7 +294,7 @@ public&nbsp;String&nbsp;getName()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAddress</h4>
-<pre>@Nullable
+<pre>@Nonnull
 public&nbsp;String&nbsp;getAddress()</pre>
 <div class="block">Return the address at this <code>Warehouse</code>.</div>
 <dl>

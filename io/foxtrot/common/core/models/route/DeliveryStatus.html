@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.Builder.html" title="class in io.foxtrot.common.core.models.route"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.html" title="class in io.foxtrot.common.core.models.route"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?io/foxtrot/common/core/models/route/DeliveryStatus.html" target="_top">Frames</a></li>
@@ -136,10 +136,16 @@ extends Enum&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/D
      <td>Marks a failed delivery of the product described in <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a></td>
    </tr>
    <tr>
-     <td>REATTEMPT</td>
+     <td>AUTHORIZE_REATTEMPT</td>
      <td>
        Marks a re-authorization to delivery the item described in <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a>. The <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a> failed previously, but
        was authorized by a manager to be reattempt.
+     </td>
+   </tr>
+   <tr>
+     <td>VISIT_LATER</td>
+     <td>
+       Marks a <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a> as failed but to be revisited later in the route. The <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a> is *not* permanently failed.
      </td>
    </tr>
  </table></div>
@@ -161,13 +167,16 @@ extends Enum&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/D
 <th class="colOne" scope="col">Enum Constant and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#FAILED">FAILED</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#AUTHORIZE_REATTEMPT">AUTHORIZE_REATTEMPT</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#REATTEMPT">REATTEMPT</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#FAILED">FAILED</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#SUCCESSFUL">SUCCESSFUL</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#VISIT_LATER">VISIT_LATER</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -234,13 +243,22 @@ the order they are declared.</div>
 <!--   -->
 </a>
 <h3>Enum Constant Detail</h3>
-<a name="REATTEMPT">
+<a name="AUTHORIZE_REATTEMPT">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>REATTEMPT</h4>
-<pre>public static final&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route">DeliveryStatus</a> REATTEMPT</pre>
+<h4>AUTHORIZE_REATTEMPT</h4>
+<pre>public static final&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route">DeliveryStatus</a> AUTHORIZE_REATTEMPT</pre>
+</li>
+</ul>
+<a name="VISIT_LATER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>VISIT_LATER</h4>
+<pre>public static final&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route">DeliveryStatus</a> VISIT_LATER</pre>
 </li>
 </ul>
 <a name="SUCCESSFUL">
@@ -357,7 +375,7 @@ not permitted.)</div>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.Builder.html" title="class in io.foxtrot.common.core.models.route"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.html" title="class in io.foxtrot.common.core.models.route"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?io/foxtrot/common/core/models/route/DeliveryStatus.html" target="_top">Frames</a></li>
