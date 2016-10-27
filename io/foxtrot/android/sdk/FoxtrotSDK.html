@@ -418,7 +418,7 @@ extends Object</pre>
 <pre>public&nbsp;void&nbsp;addRoute(@Nonnull
                      <a href="../../../../io/foxtrot/common/core/models/route/Route.html" title="class in io.foxtrot.common.core.models.route">Route</a>&nbsp;route)</pre>
 <div class="block">Import a route to Foxtrot. This method should be called after <a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-"><code>registerRouteStateListener(RouteStateListener)</code></a>.
- The optimized route will be returned through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
+ The optimized route will be returned through the <code>RouteStateListener#onRouteChanged(OptimizedRoute)</code> callback.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>route</code> - the route</dd>
@@ -435,7 +435,7 @@ extends Object</pre>
 <h4>finishRoute</h4>
 <pre>public&nbsp;void&nbsp;finishRoute(@Nonnull
                         String&nbsp;routeId)</pre>
-<div class="block">Finish a route. If there are more routes to be completed, the new route will be returned through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a>
+<div class="block">Finish a route. If there are more routes to be completed, the new route will be returned through the <code>RouteStateListener#onRouteChanged(OptimizedRoute)</code>
  callback. If there are no more routes, then <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onAllRoutesFinished--"><code>RouteStateListener.onAllRoutesFinished()</code></a> will be invoked.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -454,7 +454,7 @@ extends Object</pre>
                                @Nonnull
                                <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt</a>&nbsp;attempt)</pre>
 <div class="block">Make a <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> on an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a>.
- Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been added, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
+ Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been added, you will be informed of the changes to the route through the <code>RouteStateListener#onRouteChanged(OptimizedRoute)</code> callback.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>waypointId</code> - the waypoint id</dd>
@@ -474,7 +474,7 @@ extends Object</pre>
                                        <a href="../../../../io/foxtrot/common/core/models/route/DeliveryReattempt.html" title="class in io.foxtrot.common.core.models.route">DeliveryReattempt</a>&nbsp;reattempt)</pre>
 <div class="block">Authorize a <a href="../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#AUTHORIZE_REATTEMPT"><code>DeliveryStatus.AUTHORIZE_REATTEMPT</code></a> to a <a href="../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a>. A AUTHORIZE_REATTEMPT can only
  be authorized if there has been a <a href="../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html#FAILED"><code>DeliveryStatus.FAILED</code></a> attempt to deliver to that OptimizedWaypoint.
- Once the status has been added, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
+ Once the status has been added, you will be informed of the changes to the route through the <code>RouteStateListener#onRouteChanged(OptimizedRoute)</code> callback.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>waypointId</code> - the waypoint id</dd>
@@ -493,7 +493,7 @@ extends Object</pre>
                                      @Nonnull
                                      <a href="../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater</a>&nbsp;visitLater)</pre>
 <div class="block">Mark this <a href="../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> to be visited later.
- Once the status has been added, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
+ Once the status has been added, you will be informed of the changes to the route through the <code>RouteStateListener#onRouteChanged(OptimizedRoute)</code> callback.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>waypointId</code> - the waypoint id</dd>
@@ -510,7 +510,7 @@ extends Object</pre>
 <pre>public&nbsp;void&nbsp;undoDeliveryAttempt(@Nonnull
                                 String&nbsp;waypointId)</pre>
 <div class="block">Undo the previous <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> that was made to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a>.
- Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been undone, you will be informed of the changes to the route through the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-"><code>RouteStateListener.onRouteChanged(OptimizedRoute)</code></a> callback.</div>
+ Once the <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> has been undone, you will be informed of the changes to the route through the <code>RouteStateListener#onRouteChanged(OptimizedRoute)</code> callback.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>waypointId</code> - the waypoint id</dd>
