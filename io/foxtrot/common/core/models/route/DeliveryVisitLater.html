@@ -101,7 +101,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">io.foxtrot.common.core.models.route.AbstractDeliveryAttempt</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithTimeWindow.html" title="class in io.foxtrot.common.core.models.route">io.foxtrot.common.core.models.route.AbstractDeliveryAttemptWithTimeWindow</a></li>
+<li><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html" title="class in io.foxtrot.common.core.models.route">io.foxtrot.common.core.models.route.AbstractDeliveryAttemptWithOperatingHours</a></li>
 <li>
 <ul class="inheritance">
 <li>io.foxtrot.common.core.models.route.DeliveryVisitLater</li>
@@ -118,7 +118,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">DeliveryVisitLater</span>
-extends <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithTimeWindow.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttemptWithTimeWindow</a></pre>
+extends <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttemptWithOperatingHours</a></pre>
 <div class="block">A DeliveryVisitLater for a <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a>
  <p>
  <b>Fields:</b>
@@ -142,17 +142,17 @@ extends <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractD
      <td>The <code>DeliveryCode</code> attached to this <code>DeliveryVisitLater</code>.</td>
    </tr>
    <tr>
-     <td>timeWindow</td>
-     <td><a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route"><code>TimeWindow</code></a></td>
+     <td>operatingHours</td>
+     <td>OperatingHours</td>
      <td>false</td>
-     <td>The new time window for this delivery.</td>
+     <td>The new <code>OperatingHours</code> for this delivery.</td>
    </tr>
  </table>
  <p>
  <blockquote><pre><code>
   DeliveryVisitLater visitLater = DeliveryVisitLater.builder()
                                                   .setNotes("Customer is now home")
-                                                  .setTimeWindow(TimeWindow.builder().setStart(...).setEnd(...).build())
+                                                  .setOperatingHours(OperatingHours.builder().setStart(...).setEnd(...).build())
                                                   .build();
  </code></pre></blockquote></div>
 <dl>
@@ -206,11 +206,11 @@ extends <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractD
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.io.foxtrot.common.core.models.route.AbstractDeliveryAttemptWithTimeWindow">
+<li class="blockList"><a name="methods.inherited.from.class.io.foxtrot.common.core.models.route.AbstractDeliveryAttemptWithOperatingHours">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;io.foxtrot.common.core.models.route.<a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithTimeWindow.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttemptWithTimeWindow</a></h3>
-<code><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithTimeWindow.html#equals-java.lang.Object-">equals</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithTimeWindow.html#getTimeWindow--">getTimeWindow</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithTimeWindow.html#hashCode--">hashCode</a></code></li>
+<h3>Methods inherited from class&nbsp;io.foxtrot.common.core.models.route.<a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttemptWithOperatingHours</a></h3>
+<code><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#equals-java.lang.Object-">equals</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#getOperatingHours--">getOperatingHours</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#hashCode--">hashCode</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.foxtrot.common.core.models.route.AbstractDeliveryAttempt">

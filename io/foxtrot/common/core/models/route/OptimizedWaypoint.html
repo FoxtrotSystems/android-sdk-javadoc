@@ -172,21 +172,21 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getOperatingHours--">getOperatingHours</a></span>()</code>
+<div class="block">Return an immutable list of operating hours at this waypoint.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>Long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getServiceTimeInSeconds--">getServiceTimeInSeconds</a></span>()</code>
 <div class="block">Return the estimated amount of time driver will take to service this waypoint</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>Long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getTimeInSecondsFromPreviousWaypoint--">getTimeInSecondsFromPreviousWaypoint</a></span>()</code>
 <div class="block">Return the time in seconds to get to this waypoint from the previous waypoint</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedTimeWindow.html" title="interface in io.foxtrot.common.core.models.route">OptimizedTimeWindow</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getTimeWindows--">getTimeWindows</a></span>()</code>
-<div class="block">Return an immutable list of time windows for this waypoint.</div>
 </td>
 </tr>
 </table>
@@ -354,18 +354,18 @@ Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Opt
 </dl>
 </li>
 </ul>
-<a name="getTimeWindows--">
+<a name="getOperatingHours--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getTimeWindows</h4>
+<h4>getOperatingHours</h4>
 <pre>@Nonnull
-Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedTimeWindow.html" title="interface in io.foxtrot.common.core.models.route">OptimizedTimeWindow</a>&gt;&nbsp;getTimeWindows()</pre>
-<div class="block">Return an immutable list of time windows for this waypoint. The list may be empty.</div>
+Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a>&gt;&nbsp;getOperatingHours()</pre>
+<div class="block">Return an immutable list of operating hours at this waypoint. The list may be empty.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the time windows</dd>
+<dd>the operating hours</dd>
 </dl>
 </li>
 </ul>

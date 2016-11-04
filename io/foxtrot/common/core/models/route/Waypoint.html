@@ -158,23 +158,23 @@ extends Object</pre>
      <td>The collection of <a href="../../../../../../io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a> objects at this waypoint. This collection must not be empty.</td>
    </tr>
    <tr>
-     <td>timeWindows</td>
-     <td><code>Collection&lt;TimeWindow&gt;</code></td>
+     <td>operatingHours</td>
+     <td><code>Collection&lt;OperatingHours&gt;</code></td>
      <td>true</td>
-     <td>The collection of <a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route"><code>TimeWindow</code></a> objects at this waypoint. This collection may be empty.</td>
+     <td>The collection of <a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route"><code>OperatingHours</code></a> objects at this waypoint. This collection may be empty.</td>
    </tr>
  </table>
  <p>
  <blockquote><pre><code>
    Collection&lt;Delivery&gt; deliveries = ...;
-   Collection&lt;TimeWindow&gt; timeWindows = ...;
+   Collection&lt;OperatingHours&gt; operatingHours = ...;
    Waypoint waypoint = Waypoint.builder()
                                .setLocation(Location.create(1.0, 2.0))
                                .setAddress("123 Fake St")
                                .setName("Whole Foods")
                                .setCustomerId("Customer Unique Id")
                                .setDeliveries(deliveries)
-                               .setTimeWindows(timeWindows)
+                               .setOperatingHours(operatingHours)
                                .setServiceTimeInSeconds(600L) // 10 minutes
                                .build();
  </code></pre></blockquote></div>
@@ -262,15 +262,15 @@ extends Object</pre>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>Long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html#getServiceTimeInSeconds--">getServiceTimeInSeconds</a></span>()</code>
-<div class="block">Return the estimated time it takes in second for a driver to complete this <code>Waypoint</code></div>
+<td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html#getOperatingHours--">getOperatingHours</a></span>()</code>
+<div class="block">Return an immutable collection of <a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route"><code>OperatingHours</code></a> objects</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route">TimeWindow</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html#getTimeWindows--">getTimeWindows</a></span>()</code>
-<div class="block">Return an immutable collection of <a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route"><code>TimeWindow</code></a> objects</div>
+<td class="colFirst"><code>Long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html#getServiceTimeInSeconds--">getServiceTimeInSeconds</a></span>()</code>
+<div class="block">Return the estimated time it takes in second for a driver to complete this <code>Waypoint</code></div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -403,18 +403,18 @@ public&nbsp;Collection&lt;<a href="../../../../../../io/foxtrot/common/core/mode
 </dl>
 </li>
 </ul>
-<a name="getTimeWindows--">
+<a name="getOperatingHours--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getTimeWindows</h4>
+<h4>getOperatingHours</h4>
 <pre>@Nonnull
-public&nbsp;Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route">TimeWindow</a>&gt;&nbsp;getTimeWindows()</pre>
-<div class="block">Return an immutable collection of <a href="../../../../../../io/foxtrot/common/core/models/route/TimeWindow.html" title="class in io.foxtrot.common.core.models.route"><code>TimeWindow</code></a> objects</div>
+public&nbsp;Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a>&gt;&nbsp;getOperatingHours()</pre>
+<div class="block">Return an immutable collection of <a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route"><code>OperatingHours</code></a> objects</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the time windows</dd>
+<dd>the operating hours</dd>
 </dl>
 </li>
 </ul>
