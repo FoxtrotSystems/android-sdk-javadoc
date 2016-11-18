@@ -130,7 +130,7 @@ extends Object</pre>
    <tr>
      <td>location</td>
      <td><a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models"><code>Location</code></a></td>
-     <td>true</td>
+     <td>false</td>
      <td>The geocode coordinate at this waypoint</td>
    </tr>
    <tr>
@@ -142,7 +142,7 @@ extends Object</pre>
    <tr>
      <td>address</td>
      <td>String</td>
-     <td>true</td>
+     <td>false</td>
      <td>The address at this waypoint. This field cannot have more than 200 characters.</td>
    </tr>
    <tr>
@@ -319,7 +319,7 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getLocation</h4>
-<pre>@Nonnull
+<pre>@Nullable
 public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a>&nbsp;getLocation()</pre>
 <div class="block">Return the location of this <code>Waypoint</code></div>
 <dl>
@@ -349,7 +349,7 @@ public&nbsp;String&nbsp;getName()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAddress</h4>
-<pre>@Nonnull
+<pre>@Nullable
 public&nbsp;String&nbsp;getAddress()</pre>
 <div class="block">Return the address at this <code>Waypoint</code>.</div>
 <dl>
