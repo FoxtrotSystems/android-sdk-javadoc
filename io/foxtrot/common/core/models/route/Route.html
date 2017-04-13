@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,6 +146,12 @@ extends Object</pre>
      <td>true</td>
      <td>Collection of <a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route"><code>Waypoint</code></a> objects. This collection must not be empty.</td>
    </tr>
+    <tr>
+     <td>vehicle</td>
+     <td><a href="../../../../../../io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models"><code>Vehicle</code></a></td>
+     <td>false</td>
+     <td>Vehicle associated with this route</td>
+   </tr>
  </table>
  </p>
 
@@ -157,6 +163,9 @@ extends Object</pre>
                       .setStartTime(new DateTime(1467053939000, DateTimeZone.UTC))
                       .setWaypoints(waypoints)
                       .setWarehouse(warehouse)
+                      .setVehicle(Vehicle.builder()
+                                         .setPlateNumber("ABC-1234")
+                                         .build())
                       .build();
  </code></pre></blockquote></div>
 <dl>
@@ -225,18 +234,24 @@ extends Object</pre>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getVehicle--">getVehicle</a></span>()</code>
+<div class="block">Return the vehicle associated with this route</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getWarehouse--">getWarehouse</a></span>()</code>
 <div class="block">Return the warehouse</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getWaypoints--">getWaypoints</a></span>()</code>
 <div class="block">Return an immutable collection of waypoints for this route</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
@@ -333,6 +348,21 @@ public&nbsp;Collection&lt;<a href="../../../../../../io/foxtrot/common/core/mode
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the waypoints</dd>
+</dl>
+</li>
+</ul>
+<a name="getVehicle--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVehicle</h4>
+<pre>@Nullable
+public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a>&nbsp;getVehicle()</pre>
+<div class="block">Return the vehicle associated with this route</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the vehicle or null if none present</dd>
 </dl>
 </li>
 </ul>

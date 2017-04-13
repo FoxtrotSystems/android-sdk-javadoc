@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -131,59 +131,77 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getContactEmail--">getContactEmail</a></span>()</code>
+<div class="block">Return the email address associated with this waypoint.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getContactName--">getContactName</a></span>()</code>
+<div class="block">Return the contact name associated with this waypoint.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getContactPhone--">getContactPhone</a></span>()</code>
+<div class="block">Return the phone number associated with this waypoint</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getCustomerId--">getCustomerId</a></span>()</code>
 <div class="block">Return the customer's id.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDelivery</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getDeliveries--">getDeliveries</a></span>()</code>
 <div class="block">Return an immutable collection of deliveries for this waypoint.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>Long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getDistanceInMetersFromPreviousWaypoint--">getDistanceInMetersFromPreviousWaypoint</a></span>()</code>
 <div class="block">Return the distance in meters to get to this waypoint from the previous waypoint</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.joda.time.DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getEta--">getEta</a></span>()</code>
 <div class="block">Return the estimated time of arrival to this waypoint</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getId--">getId</a></span>()</code>
 <div class="block">Return the id for this waypoint</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getLocation--">getLocation</a></span>()</code>
 <div class="block">Return the location of this waypoint</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getName--">getName</a></span>()</code>
 <div class="block">Return the name of this waypoint</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getOperatingHours--">getOperatingHours</a></span>()</code>
 <div class="block">Return an immutable list of operating hours at this waypoint.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>Long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getServiceTimeInSeconds--">getServiceTimeInSeconds</a></span>()</code>
 <div class="block">Return the estimated amount of time driver will take to service this waypoint</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>Long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getTimeInSecondsFromPreviousWaypoint--">getTimeInSecondsFromPreviousWaypoint</a></span>()</code>
 <div class="block">Return the time in seconds to get to this waypoint from the previous waypoint</div>
@@ -300,7 +318,7 @@ org.joda.time.DateTime&nbsp;getEta()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getServiceTimeInSeconds</h4>
-<pre>@Nonnull
+<pre>@Nullable
 Long&nbsp;getServiceTimeInSeconds()</pre>
 <div class="block">Return the estimated amount of time driver will take to service this waypoint</div>
 <dl>
@@ -357,7 +375,7 @@ Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Opt
 <a name="getOperatingHours--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getOperatingHours</h4>
 <pre>@Nonnull
@@ -366,6 +384,48 @@ Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Opt
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the operating hours</dd>
+</dl>
+</li>
+</ul>
+<a name="getContactEmail--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContactEmail</h4>
+<pre>String&nbsp;getContactEmail()</pre>
+<div class="block">Return the email address associated with this waypoint.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the email address</dd>
+</dl>
+</li>
+</ul>
+<a name="getContactName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContactName</h4>
+<pre>String&nbsp;getContactName()</pre>
+<div class="block">Return the contact name associated with this waypoint.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the contact name</dd>
+</dl>
+</li>
+</ul>
+<a name="getContactPhone--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getContactPhone</h4>
+<pre>String&nbsp;getContactPhone()</pre>
+<div class="block">Return the phone number associated with this waypoint</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the phone number</dd>
 </dl>
 </li>
 </ul>
