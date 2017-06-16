@@ -82,6 +82,14 @@
 <dd>
 <div class="block">Make a <a href="io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> on an <a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#addDeliveryAttemptForDelivery-java.lang.String-io.foxtrot.common.core.models.route.DeliveryAttempt-">addDeliveryAttemptForDelivery(String, DeliveryAttempt)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">Make a <a href="io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> on an <a href="io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#addDeliveryAttemptsForDeliveries-java.util.Map-">addDeliveryAttemptsForDeliveries(Map&lt;String, DeliveryAttempt&gt;)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">A batch version of addDeliveryAttemptForDelivery</div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#addRoute-io.foxtrot.common.core.models.route.Route-">addRoute(Route)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
 <div class="block">Import a route to Foxtrot.</div>
@@ -91,6 +99,14 @@
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#authorizeDeliveryReattempt-java.lang.String-io.foxtrot.common.core.models.route.DeliveryReattempt-">authorizeDeliveryReattempt(String, DeliveryReattempt)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
 <div class="block">Authorize a <a href="io/foxtrot/common/core/models/route/DeliveryStatus.html#AUTHORIZE_REATTEMPT"><code>DeliveryStatus.AUTHORIZE_REATTEMPT</code></a> to a <a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#authorizeDeliveryReattemptForDelivery-java.lang.String-io.foxtrot.common.core.models.route.DeliveryReattempt-">authorizeDeliveryReattemptForDelivery(String, DeliveryReattempt)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">Authorize a <a href="io/foxtrot/common/core/models/route/DeliveryStatus.html#AUTHORIZE_REATTEMPT"><code>DeliveryStatus.AUTHORIZE_REATTEMPT</code></a> to a <a href="io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#authorizeDeliveryReattemptsForDeliveries-java.util.Map-">authorizeDeliveryReattemptsForDeliveries(Map&lt;String, DeliveryReattempt&gt;)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">A batch version of authorizeDeliveryReattemptForDelivery.</div>
 </dd>
 </dl>
 <a name="I:B">
@@ -321,6 +337,10 @@
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Waypoint.html#getDeliveries--">getDeliveries()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a></dt>
 <dd>
 <div class="block">Return an immutable collection of <a href="io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route"><code>Delivery</code></a> objects</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedDelivery.html#getDeliveryAttempts--">getDeliveryAttempts()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDelivery</a></dt>
+<dd>
+<div class="block">Return the <a href="io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDeliveryAttempt</code></a>s associate with this delivery</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getDeliveryCode--">getDeliveryCode()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttempt</a></dt>
 <dd>
@@ -640,9 +660,17 @@
 </a>
 <h2 class="title">M</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#markDeliveriesToVisitLaterForDeliveries-java.util.Map-">markDeliveriesToVisitLaterForDeliveries(Map&lt;String, DeliveryVisitLater&gt;)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">A batch version of markDeliveryToVisitLaterForDelivery</div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#markDeliveryToVisitLater-java.lang.String-io.foxtrot.common.core.models.route.DeliveryVisitLater-">markDeliveryToVisitLater(String, DeliveryVisitLater)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
 <div class="block">Mark this <a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> to be visited later.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#markDeliveryToVisitLaterForDelivery-java.lang.String-io.foxtrot.common.core.models.route.DeliveryVisitLater-">markDeliveryToVisitLaterForDelivery(String, DeliveryVisitLater)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">Mark this <a href="io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a> to be visited later.</div>
 </dd>
 </dl>
 <a name="I:O">
@@ -822,7 +850,23 @@
 </a>
 <h2 class="title">T</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/Driver.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.<a href="io/foxtrot/common/core/models/Driver.html" title="class in io.foxtrot.common.core.models">Driver</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/Location.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.<a href="io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttempt</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttemptWithOperatingHours</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Delivery.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route">Delivery</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OperatingHours.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Route.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Route.html" title="class in io.foxtrot.common.core.models.route">Route</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Warehouse.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/Vehicle.html#toString--">toString()</a></span> - Method in class io.foxtrot.common.core.models.<a href="io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:U">
@@ -833,6 +877,14 @@
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttempt-java.lang.String-">undoDeliveryAttempt(String)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
 <div class="block">Undo the previous <a href="io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> that was made to an <a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttemptForDeliveries-java.util.Set-">undoDeliveryAttemptForDeliveries(Set&lt;String&gt;)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">A batch version of undoDeliveryAttemptForDelivery</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttemptForDelivery-java.lang.String-">undoDeliveryAttemptForDelivery(String)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">Undo the previous <a href="io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> that was made to an <a href="io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterErrorStateListener-io.foxtrot.android.sdk.state.ErrorStateListener-">unregisterErrorStateListener(ErrorStateListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
