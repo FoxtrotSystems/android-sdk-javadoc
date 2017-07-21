@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":9,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":9,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":9,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -257,61 +257,67 @@ extends Object</pre>
 </tr>
 <tr class="altColor" id="i19">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#refreshAssignedRoutes--">refreshAssignedRoutes</a></span>()</code>
+<div class="block">Refresh route(s) assigned to the current driver</div>
+</td>
+</tr>
+<tr class="rowColor" id="i20">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerErrorStateListener-io.foxtrot.android.sdk.state.ErrorStateListener-">registerErrorStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a>&nbsp;errorStateListener)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 </td>
 </tr>
-<tr class="rowColor" id="i20">
+<tr class="altColor" id="i21">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">registerLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor" id="i21">
+<tr class="rowColor" id="i22">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">registerRouteStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a></div>
 </td>
 </tr>
 
-<tr class="rowColor" id="i23">
+<tr class="altColor" id="i24">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#setup-android.content.Context-java.lang.String-">setup</a></span>(android.content.Context&nbsp;context,
      String&nbsp;apiKey)</code>
 <div class="block">Setup the FoxtrotSDK with the application <code>context</code> and <code>apiKey</code></div>
 </td>
 </tr>
-<tr class="altColor" id="i24">
+<tr class="rowColor" id="i25">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttempt-java.lang.String-">undoDeliveryAttempt</a></span>(String&nbsp;waypointId)</code>
 <div class="block">Undo the previous <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> that was made to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i25">
+<tr class="altColor" id="i26">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttemptForDeliveries-java.util.Set-">undoDeliveryAttemptForDeliveries</a></span>(Set&lt;String&gt;&nbsp;deliveryIds)</code>
 <div class="block">A batch version of undoDeliveryAttemptForDelivery</div>
 </td>
 </tr>
-<tr class="altColor" id="i26">
+<tr class="rowColor" id="i27">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttemptForDelivery-java.lang.String-">undoDeliveryAttemptForDelivery</a></span>(String&nbsp;deliveryId)</code>
 <div class="block">Undo the previous <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> that was made to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedDelivery</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i27">
+<tr class="altColor" id="i28">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterErrorStateListener-io.foxtrot.android.sdk.state.ErrorStateListener-">unregisterErrorStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a>&nbsp;errorStateListener)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 </td>
 </tr>
-<tr class="altColor" id="i28">
+<tr class="rowColor" id="i29">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">unregisterLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i29">
+<tr class="altColor" id="i30">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">unregisterRouteStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a></div>
@@ -772,6 +778,16 @@ extends Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>errorStateListener</code> - the error state listener</dd>
 </dl>
+</li>
+</ul>
+<a name="refreshAssignedRoutes--">
+<!-- -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refreshAssignedRoutes</h4>
+<pre>public&nbsp;void&nbsp;refreshAssignedRoutes()</pre>
+<div class="block">Refresh route(s) assigned to the current driver</div>
 </li>
 </ul>
 <a name="getRequiredPermissions--">

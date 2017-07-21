@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":42,"i8":10,"i9":10,"i10":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -138,7 +138,21 @@ extends Object</pre>
      <td>warehouse</td>
      <td><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route"><code>Warehouse</code></a></td>
      <td>true</td>
-     <td>The warehouse information. This is the beginning and ending point of your route</td>
+     <td>DEPRECATED: Please use startingWarehouse and endingWarehouse. The same warehouse can be
+     specified in both. The method will be removed soon \n
+     The warehouse information. This is the beginning and ending point of your route</td>
+   </tr>
+   <tr>
+     <td>startingWarehouse</td>
+     <td><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route"><code>Warehouse</code></a></td>
+     <td>true</td>
+     <td>The starting warehouse information. This is the starting point of your route</td>
+   </tr>
+    <tr>
+     <td>endingWarehouse</td>
+     <td><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route"><code>Warehouse</code></a></td>
+     <td>true</td>
+     <td>The ending warehouse information. This is the ending point of your route</td>
    </tr>
    <tr>
      <td>waypoints</td>
@@ -157,12 +171,14 @@ extends Object</pre>
 
  <blockquote><pre><code>
    Collection&lt;Waypoint&gt; waypoints = ...
-   Warehouse warehouse = ...
+   Warehouse startingWarehouse = ...
+   Warehouse endingWarehouse = ...
    Route route = Route.builder()
                       .setName("Route A")
                       .setStartTime(new DateTime(1467053939000, DateTimeZone.UTC))
                       .setWaypoints(waypoints)
-                      .setWarehouse(warehouse)
+                      .setStartingWarehouse(startingWarehouse)
+                      .setEndingWarehouse(endingWarehouse)
                       .setVehicle(Vehicle.builder()
                                          .setPlateNumber("ABC-1234")
                                          .build())
@@ -206,7 +222,7 @@ extends Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -222,40 +238,52 @@ extends Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#equals-java.lang.Object-">equals</a></span>(Object&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getEndingWarehouse--">getEndingWarehouse</a></span>()</code>
+<div class="block">Return the ending warehouse</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getName--">getName</a></span>()</code>
 <div class="block">Return the name of this route</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getStartingWarehouse--">getStartingWarehouse</a></span>()</code>
+<div class="block">Return the starting warehouse</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>org.joda.time.DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getStartTime--">getStartTime</a></span>()</code>
 <div class="block">Return the start time of this route</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getVehicle--">getVehicle</a></span>()</code>
 <div class="block">Return the vehicle associated with this route</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getWarehouse--">getWarehouse</a></span>()</code>
-<div class="block">Return the warehouse</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#getWaypoints--">getWaypoints</a></span>()</code>
 <div class="block">Return an immutable collection of waypoints for this route</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -331,12 +359,48 @@ public&nbsp;String&nbsp;getName()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getWarehouse</h4>
-<pre>@Nonnull
+<pre>@Deprecated
+ @Nullable
 public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;getWarehouse()</pre>
-<div class="block">Return the warehouse</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Return the warehouse where the route begins and ends.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the warehouse</dd>
+<dd>the warehouse
+
+ Deprecated: Please use startingWarehouse and endingWarehouse instead. It is fine to set both
+ starting and ending warehouses to the same warehouse if the route should start and end in the
+ same warehouse.</dd>
+</dl>
+</li>
+</ul>
+<a name="getStartingWarehouse--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStartingWarehouse</h4>
+<pre>@Nullable
+public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;getStartingWarehouse()</pre>
+<div class="block">Return the starting warehouse</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the starting warehouse</dd>
+</dl>
+</li>
+</ul>
+<a name="getEndingWarehouse--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEndingWarehouse</h4>
+<pre>@Nullable
+public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;getEndingWarehouse()</pre>
+<div class="block">Return the ending warehouse</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the ending warehouse</dd>
 </dl>
 </li>
 </ul>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -124,36 +124,42 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getEndingWarehouse--">getEndingWarehouse</a></span>()</code>
+<div class="block">Return the ending warehouse of this route</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getId--">getId</a></span>()</code>
 <div class="block">Return the id for this route</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getName--">getName</a></span>()</code>
 <div class="block">Return the name of this route</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getRemainingRoutePolyline--">getRemainingRoutePolyline</a></span>()</code>
 <div class="block">Return the polyline representing the remainder of the route.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartingWarehouse--">getStartingWarehouse</a></span>()</code>
+<div class="block">Return the starting warehouse of this route</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>org.joda.time.DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartTime--">getStartTime</a></span>()</code>
 <div class="block">Return the start time for this route</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getWarehouse--">getWarehouse</a></span>()</code>
-<div class="block">Return the warehouse of this route</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getWaypoints--">getWaypoints</a></span>()</code>
 <div class="block">Return an immutable list of <a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> for this route.</div>
@@ -235,18 +241,33 @@ List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Optimized
 </dl>
 </li>
 </ul>
-<a name="getWarehouse--">
+<a name="getStartingWarehouse--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getWarehouse</h4>
+<h4>getStartingWarehouse</h4>
 <pre>@Nonnull
-<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a>&nbsp;getWarehouse()</pre>
-<div class="block">Return the warehouse of this route</div>
+<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a>&nbsp;getStartingWarehouse()</pre>
+<div class="block">Return the starting warehouse of this route</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the warehouse.</dd>
+<dd>the starting warehouse.</dd>
+</dl>
+</li>
+</ul>
+<a name="getEndingWarehouse--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEndingWarehouse</h4>
+<pre>@Nonnull
+<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a>&nbsp;getEndingWarehouse()</pre>
+<div class="block">Return the ending warehouse of this route</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the ending warehouse.</dd>
 </dl>
 </li>
 </ul>

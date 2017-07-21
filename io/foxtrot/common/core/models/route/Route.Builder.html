@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":42,"i8":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -131,7 +131,7 @@ extends Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -146,21 +146,31 @@ extends Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setName-java.lang.String-">setName</a></span>(String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setEndingWarehouse-io.foxtrot.common.core.models.route.Warehouse-">setEndingWarehouse</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;endingWarehouse)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setStartTime-org.joda.time.DateTime-">setStartTime</a></span>(org.joda.time.DateTime&nbsp;startTime)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setName-java.lang.String-">setName</a></span>(String&nbsp;name)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setVehicle-io.foxtrot.common.core.models.Vehicle-">setVehicle</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a>&nbsp;vehicle)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setStartingWarehouse-io.foxtrot.common.core.models.route.Warehouse-">setStartingWarehouse</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;startingWarehouse)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setWarehouse-io.foxtrot.common.core.models.route.Warehouse-">setWarehouse</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;warehouse)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setStartTime-org.joda.time.DateTime-">setStartTime</a></span>(org.joda.time.DateTime&nbsp;startTime)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setVehicle-io.foxtrot.common.core.models.Vehicle-">setVehicle</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a>&nbsp;vehicle)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setWarehouse-io.foxtrot.common.core.models.route.Warehouse-">setWarehouse</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;warehouse)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setWaypoints-java.util.Collection-">setWaypoints</a></span>(Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;&nbsp;waypoints)</code>&nbsp;</td>
 </tr>
@@ -212,8 +222,33 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setWarehouse</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setWarehouse(@Nonnull
-                                  <a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;warehouse)</pre>
+<pre>@Deprecated
+public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setWarehouse(@Nonnull
+                                              <a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;warehouse)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Deprecated: Please use startingWarehouse and endingWarehouse instead. It is fine to set both
+ starting and ending warehouses to the same warehouse if the route should start and end in the
+ same warehouse.</div>
+</li>
+</ul>
+<a name="setStartingWarehouse-io.foxtrot.common.core.models.route.Warehouse-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setStartingWarehouse</h4>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setStartingWarehouse(@Nonnull
+                                          <a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;startingWarehouse)</pre>
+</li>
+</ul>
+<a name="setEndingWarehouse-io.foxtrot.common.core.models.route.Warehouse-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEndingWarehouse</h4>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setEndingWarehouse(@Nonnull
+                                        <a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;endingWarehouse)</pre>
 </li>
 </ul>
 <a name="setWaypoints-java.util.Collection-">

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -130,15 +130,33 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>Long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getDistanceInMetersFromPreviousWaypoint--">getDistanceInMetersFromPreviousWaypoint</a></span>()</code>
+<div class="block">Return the distance in meters to get to this waypoint from the previous waypoint</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>org.joda.time.DateTime</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getEta--">getEta</a></span>()</code>
+<div class="block">Return the estimated time of arrival for this warehouse</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getLocation--">getLocation</a></span>()</code>
 <div class="block">Return the location of this warehouse</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getName--">getName</a></span>()</code>
 <div class="block">Return the name of this warehouse</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>Long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getTimeInSecondsFromPreviousWaypoint--">getTimeInSecondsFromPreviousWaypoint</a></span>()</code>
+<div class="block">Return the time in seconds to get to this waypoint from the previous waypoint</div>
 </td>
 </tr>
 </table>
@@ -189,7 +207,7 @@ String&nbsp;getName()</pre>
 <a name="getAddress--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getAddress</h4>
 <pre>@Nonnull
@@ -198,6 +216,51 @@ String&nbsp;getAddress()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the address</dd>
+</dl>
+</li>
+</ul>
+<a name="getEta--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEta</h4>
+<pre>@Nullable
+org.joda.time.DateTime&nbsp;getEta()</pre>
+<div class="block">Return the estimated time of arrival for this warehouse</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the eta</dd>
+</dl>
+</li>
+</ul>
+<a name="getDistanceInMetersFromPreviousWaypoint--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDistanceInMetersFromPreviousWaypoint</h4>
+<pre>@Nullable
+Long&nbsp;getDistanceInMetersFromPreviousWaypoint()</pre>
+<div class="block">Return the distance in meters to get to this waypoint from the previous waypoint</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the distance in meters</dd>
+</dl>
+</li>
+</ul>
+<a name="getTimeInSecondsFromPreviousWaypoint--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getTimeInSecondsFromPreviousWaypoint</h4>
+<pre>@Nullable
+Long&nbsp;getTimeInSecondsFromPreviousWaypoint()</pre>
+<div class="block">Return the time in seconds to get to this waypoint from the previous waypoint</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the time in seconds</dd>
 </dl>
 </li>
 </ul>
