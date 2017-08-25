@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,6 +165,12 @@ var activeTableTab = "activeTableTab";
 <div class="block">Return an immutable list of <a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> for this route.</div>
 </td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#isOptimizable--">isOptimizable</a></span>()</code>
+<div class="block">Whether or not the route is optimizable.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -274,10 +280,10 @@ List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Optimized
 <a name="getRemainingRoutePolyline--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getRemainingRoutePolyline</h4>
-<pre>@Nonnull
+<pre>@Nullable
 String&nbsp;getRemainingRoutePolyline()</pre>
 <div class="block">Return the polyline representing the remainder of the route. The polyline is encoded according
  to Google's polyline algorithm. See https://developers.google.com/maps/documentation/utilities/polylinealgorithm
@@ -285,6 +291,21 @@ String&nbsp;getRemainingRoutePolyline()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the encoded polyline.</dd>
+</dl>
+</li>
+</ul>
+<a name="isOptimizable--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isOptimizable</h4>
+<pre>boolean&nbsp;isOptimizable()</pre>
+<div class="block">Whether or not the route is optimizable. If false, the route is not or cannot be optimized by
+ the Foxtrot optimization algorithms</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>is the route optimizable</dd>
 </dl>
 </li>
 </ul>
