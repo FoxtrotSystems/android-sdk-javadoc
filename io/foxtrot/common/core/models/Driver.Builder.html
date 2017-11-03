@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,9 +142,15 @@ extends Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html" title="class in io.foxtrot.common.core.models">Driver.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html#setId-java.lang.String-">setId</a></span>(String&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html#setAuthToken-java.lang.String-">setAuthToken</a></span>(String&nbsp;authToken)</code>
+<div class="block">Only required for resume</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html" title="class in io.foxtrot.common.core.models">Driver.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html#setId-java.lang.String-">setId</a></span>(String&nbsp;id)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html" title="class in io.foxtrot.common.core.models">Driver.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html#setName-java.lang.String-">setName</a></span>(String&nbsp;name)</code>&nbsp;</td>
 </tr>
@@ -188,6 +194,22 @@ extends Object</pre>
 <h4>setName</h4>
 <pre>public&nbsp;<a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html" title="class in io.foxtrot.common.core.models">Driver.Builder</a>&nbsp;setName(@Nonnull
                               String&nbsp;name)</pre>
+</li>
+</ul>
+<a name="setAuthToken-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAuthToken</h4>
+<pre>public&nbsp;<a href="../../../../../io/foxtrot/common/core/models/Driver.Builder.html" title="class in io.foxtrot.common.core.models">Driver.Builder</a>&nbsp;setAuthToken(@Nonnull
+                                   String&nbsp;authToken)</pre>
+<div class="block">Only required for resume</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>authToken</code> - </dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a name="build--">

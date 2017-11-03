@@ -113,6 +113,10 @@ extends Object</pre>
  has been imported, a new <a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedRoute</code></a> object will be returned to you via your registered
  <code>RouteStateListener</code> with the optimized route.
 
+ Note about Warehouses: Please specify both a startingWarehouse() and an endingWarehouse(). The
+ same warehouse object can be used for both. It is also possible to specify neither, in which case
+ the default warehouse for the driver's distribution center (DC) will be used.
+
  <p>
  <b>Fields:</b>
  <table summary="">
@@ -137,22 +141,27 @@ extends Object</pre>
    <tr>
      <td>warehouse</td>
      <td><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route"><code>Warehouse</code></a></td>
-     <td>true</td>
+     <td>false</td>
      <td>DEPRECATED: Please use startingWarehouse and endingWarehouse. The same warehouse can be
      specified in both. The method will be removed soon \n
-     The warehouse information. This is the beginning and ending point of your route</td>
+     The warehouse information. This is the beginning and ending point of your route. If no
+     warehouse is specified, the default for your DC will be used.</td>
    </tr>
    <tr>
      <td>startingWarehouse</td>
      <td><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route"><code>Warehouse</code></a></td>
-     <td>true</td>
-     <td>The starting warehouse information. This is the starting point of your route</td>
+     <td>false</td>
+     <td>The starting warehouse information. This is the starting point of your route. If no
+     warehouse is specified, the default for your DC will be used. Note that until synced with the
+     server, a default placeholder will be used.</td>
    </tr>
     <tr>
      <td>endingWarehouse</td>
      <td><a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route"><code>Warehouse</code></a></td>
-     <td>true</td>
-     <td>The ending warehouse information. This is the ending point of your route</td>
+     <td>false</td>
+     <td>The ending warehouse information. This is the ending point of your route. If no
+     warehouse is specified, the default for your DC will be used. Note that until synced with the
+     server, a default placeholder will be used.</td>
    </tr>
    <tr>
      <td>waypoints</td>
