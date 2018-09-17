@@ -112,7 +112,10 @@ extends Object</pre>
 <div class="block">An object representing a geocode coordinate
 
  <blockquote><pre><code>
-   Location location = Location.create(1.0, 2.0);
+  Location.builder()
+      .setLatitude(37.769002)
+      .setLongitude(-122.490759)
+      .build();
  </code></pre></blockquote></div>
 </li>
 </ul>
@@ -222,7 +225,7 @@ extends Object</pre>
 public static&nbsp;<a href="../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a>&nbsp;create(double&nbsp;latitude,
                                           double&nbsp;longitude)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<div class="block">Static constructor for a <code>Location</code> object</div>
+<div class="block">Static constructor for a <code>Location</code> object. Deprecated: please use Location.Builder; create() will be removed soon.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>latitude</code> - the latitude. Must be >= -90 and <= 90</dd>
