@@ -132,6 +132,11 @@ extends Enum&lt;<a href="../../../../../../io/foxtrot/android/sdk/auth/controlle
      <td>Your API key is invalid. Please contact your administrator.</td>
    </tr>
    <tr>
+     <td>INVALID_RESUME_STATE</td>
+     <td>Resume failed. This can be thrown when the driver attempting to be resumed is different
+     than the previously logged in driver, or when no driver has been logged in yet.</td>
+   </tr>
+   <tr>
      <td>NETWORK_ERROR</td>
      <td>Network connectivity is offline. Please try again later</td>
    </tr>
@@ -162,6 +167,9 @@ extends Enum&lt;<a href="../../../../../../io/foxtrot/android/sdk/auth/controlle
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html#INVALID_API_KEY">INVALID_API_KEY</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html#INVALID_RESUME_STATE">INVALID_RESUME_STATE</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html#NETWORK_ERROR">NETWORK_ERROR</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -234,6 +242,15 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers">LoginError</a> INVALID_API_KEY</pre>
 </li>
 </ul>
+<a name="INVALID_RESUME_STATE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INVALID_RESUME_STATE</h4>
+<pre>public static final&nbsp;<a href="../../../../../../io/foxtrot/android/sdk/auth/controllers/LoginError.html" title="enum in io.foxtrot.android.sdk.auth.controllers">LoginError</a> INVALID_RESUME_STATE</pre>
+</li>
+</ul>
 <a name="NETWORK_ERROR">
 <!--   -->
 </a>
@@ -299,8 +316,7 @@ not permitted.)</div>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getError</h4>
-<pre>@Nonnull
-public&nbsp;String&nbsp;getError()</pre>
+<pre>public&nbsp;String&nbsp;getError()</pre>
 </li>
 </ul>
 </li>

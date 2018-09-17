@@ -124,7 +124,7 @@ extends Object</pre>
       }
 
       &#64;Override
-      public void onSuccess() {
+      public void onSuccess(Driver authenticatedDriver) {
         super.onSuccess();
         // Proceed to next activity
       }
@@ -264,8 +264,7 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getHandler</h4>
-<pre>@NonNull
-public abstract&nbsp;android.os.Handler&nbsp;getHandler()</pre>
+<pre>public abstract&nbsp;android.os.Handler&nbsp;getHandler()</pre>
 <div class="block">Return the <code>Handler</code> object the callback will get posted to.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

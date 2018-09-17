@@ -166,7 +166,7 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>org.joda.time.DateTime</code></td>
+<td class="colFirst"><code>DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getEta--">getEta</a></span>()</code>
 <div class="block">Return the estimated time of arrival to this waypoint</div>
 </td>
@@ -228,8 +228,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getId</h4>
-<pre>@Nonnull
-String&nbsp;getId()</pre>
+<pre>String&nbsp;getId()</pre>
 <div class="block">Return the id for this waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -243,8 +242,7 @@ String&nbsp;getId()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getLocation</h4>
-<pre>@Nullable
-<a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a>&nbsp;getLocation()</pre>
+<pre><a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a>&nbsp;getLocation()</pre>
 <div class="block">Return the location of this waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -258,8 +256,7 @@ String&nbsp;getId()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>@Nonnull
-String&nbsp;getName()</pre>
+<pre>String&nbsp;getName()</pre>
 <div class="block">Return the name of this waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -273,8 +270,7 @@ String&nbsp;getName()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAddress</h4>
-<pre>@Nullable
-String&nbsp;getAddress()</pre>
+<pre>String&nbsp;getAddress()</pre>
 <div class="block">Return the address of this waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -288,8 +284,7 @@ String&nbsp;getAddress()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCustomerId</h4>
-<pre>@Nonnull
-String&nbsp;getCustomerId()</pre>
+<pre>String&nbsp;getCustomerId()</pre>
 <div class="block">Return the customer's id.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -303,8 +298,7 @@ String&nbsp;getCustomerId()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getEta</h4>
-<pre>@Nullable
-org.joda.time.DateTime&nbsp;getEta()</pre>
+<pre>DateTime&nbsp;getEta()</pre>
 <div class="block">Return the estimated time of arrival to this waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -318,8 +312,7 @@ org.joda.time.DateTime&nbsp;getEta()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getServiceTimeInSeconds</h4>
-<pre>@Nullable
-Long&nbsp;getServiceTimeInSeconds()</pre>
+<pre>Long&nbsp;getServiceTimeInSeconds()</pre>
 <div class="block">Return the estimated amount of time driver will take to service this waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -333,8 +326,7 @@ Long&nbsp;getServiceTimeInSeconds()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDistanceInMetersFromPreviousWaypoint</h4>
-<pre>@Nullable
-Long&nbsp;getDistanceInMetersFromPreviousWaypoint()</pre>
+<pre>Long&nbsp;getDistanceInMetersFromPreviousWaypoint()</pre>
 <div class="block">Return the distance in meters to get to this waypoint from the previous waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -348,8 +340,7 @@ Long&nbsp;getDistanceInMetersFromPreviousWaypoint()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTimeInSecondsFromPreviousWaypoint</h4>
-<pre>@Nullable
-Long&nbsp;getTimeInSecondsFromPreviousWaypoint()</pre>
+<pre>Long&nbsp;getTimeInSecondsFromPreviousWaypoint()</pre>
 <div class="block">Return the time in seconds to get to this waypoint from the previous waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -363,8 +354,7 @@ Long&nbsp;getTimeInSecondsFromPreviousWaypoint()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDeliveries</h4>
-<pre>@Nonnull
-Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDelivery</a>&gt;&nbsp;getDeliveries()</pre>
+<pre>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDelivery</a>&gt;&nbsp;getDeliveries()</pre>
 <div class="block">Return an immutable collection of deliveries for this waypoint. There will always be at least one delivery.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -378,8 +368,7 @@ Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Opt
 <ul class="blockList">
 <li class="blockList">
 <h4>getOperatingHours</h4>
-<pre>@Nonnull
-Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a>&gt;&nbsp;getOperatingHours()</pre>
+<pre>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a>&gt;&nbsp;getOperatingHours()</pre>
 <div class="block">Return an immutable list of operating hours at this waypoint. The list may be empty.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

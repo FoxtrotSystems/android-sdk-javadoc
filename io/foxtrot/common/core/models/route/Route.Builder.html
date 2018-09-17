@@ -158,7 +158,7 @@ extends Object</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setStartTime-org.joda.time.DateTime-">setStartTime</a></span>(org.joda.time.DateTime&nbsp;startTime)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html#setStartTime-DateTime-">setStartTime</a></span>(DateTime&nbsp;startTime)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></code></td>
@@ -196,14 +196,13 @@ extends Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="setStartTime-org.joda.time.DateTime-">
+<a name="setStartTime-DateTime-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setStartTime</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setStartTime(@Nonnull
-                                  org.joda.time.DateTime&nbsp;startTime)</pre>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setStartTime(DateTime&nbsp;startTime)</pre>
 </li>
 </ul>
 <a name="setName-java.lang.String-">
@@ -212,8 +211,7 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setName</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setName(@Nonnull
-                             String&nbsp;name)</pre>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setName(String&nbsp;name)</pre>
 </li>
 </ul>
 <a name="setWarehouse-io.foxtrot.common.core.models.route.Warehouse-">
@@ -223,8 +221,7 @@ extends Object</pre>
 <li class="blockList">
 <h4>setWarehouse</h4>
 <pre>@Deprecated
-public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setWarehouse(@Nonnull
-                                              <a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;warehouse)</pre>
+public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setWarehouse(<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;warehouse)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Deprecated: Please use startingWarehouse and endingWarehouse instead. It is fine to set both
  starting and ending warehouses to the same warehouse if the route should start and end in the
@@ -237,8 +234,7 @@ public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route
 <ul class="blockList">
 <li class="blockList">
 <h4>setStartingWarehouse</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setStartingWarehouse(@Nonnull
-                                          <a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;startingWarehouse)</pre>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setStartingWarehouse(<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;startingWarehouse)</pre>
 </li>
 </ul>
 <a name="setEndingWarehouse-io.foxtrot.common.core.models.route.Warehouse-">
@@ -247,8 +243,7 @@ public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route
 <ul class="blockList">
 <li class="blockList">
 <h4>setEndingWarehouse</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setEndingWarehouse(@Nonnull
-                                        <a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;endingWarehouse)</pre>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setEndingWarehouse(<a href="../../../../../../io/foxtrot/common/core/models/route/Warehouse.html" title="class in io.foxtrot.common.core.models.route">Warehouse</a>&nbsp;endingWarehouse)</pre>
 </li>
 </ul>
 <a name="setWaypoints-java.util.Collection-">
@@ -257,8 +252,7 @@ public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route
 <ul class="blockList">
 <li class="blockList">
 <h4>setWaypoints</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setWaypoints(@Nonnull
-                                  Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;&nbsp;waypoints)</pre>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setWaypoints(Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&gt;&nbsp;waypoints)</pre>
 </li>
 </ul>
 <a name="addWaypoint-io.foxtrot.common.core.models.route.Waypoint-">
@@ -267,8 +261,7 @@ public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route
 <ul class="blockList">
 <li class="blockList">
 <h4>addWaypoint</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;addWaypoint(@Nonnull
-                                 <a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&nbsp;waypoint)</pre>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;addWaypoint(<a href="../../../../../../io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a>&nbsp;waypoint)</pre>
 </li>
 </ul>
 <a name="setVehicle-io.foxtrot.common.core.models.Vehicle-">
@@ -277,8 +270,7 @@ public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route
 <ul class="blockList">
 <li class="blockList">
 <h4>setVehicle</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setVehicle(@Nullable
-                                <a href="../../../../../../io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a>&nbsp;vehicle)</pre>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a>&nbsp;setVehicle(<a href="../../../../../../io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a>&nbsp;vehicle)</pre>
 </li>
 </ul>
 <a name="build--">

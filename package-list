@@ -1,5 +1,6 @@
 io.foxtrot.android.sdk
 io.foxtrot.android.sdk.auth.controllers
+io.foxtrot.android.sdk.route.snapshot
 io.foxtrot.android.sdk.state
 io.foxtrot.common.core.models
 io.foxtrot.common.core.models.route

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -73,13 +73,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -170,25 +170,6 @@ extends Object</pre>
 </table>
 </li>
 </ul>
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.html#authToken">authToken</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -213,27 +194,21 @@ extends Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.html#getAuthToken--">getAuthToken</a></span>()</code>
-<div class="block">Return the driver's auth token</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.html#getId--">getId</a></span>()</code>
 <div class="block">Return the driver's id</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.html#getName--">getName</a></span>()</code>
 <div class="block">Return the driver's name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/common/core/models/Driver.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -253,24 +228,6 @@ extends Object</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="authToken">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>authToken</h4>
-<pre>@Nullable
-protected final&nbsp;String authToken</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -297,8 +254,7 @@ protected final&nbsp;String authToken</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getId</h4>
-<pre>@Nonnull
-public&nbsp;String&nbsp;getId()</pre>
+<pre>public&nbsp;String&nbsp;getId()</pre>
 <div class="block">Return the driver's id</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -312,27 +268,11 @@ public&nbsp;String&nbsp;getId()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>@Nullable
-public&nbsp;String&nbsp;getName()</pre>
+<pre>public&nbsp;String&nbsp;getName()</pre>
 <div class="block">Return the driver's name</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the driver's name</dd>
-</dl>
-</li>
-</ul>
-<a name="getAuthToken--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getAuthToken</h4>
-<pre>@Nullable
-public&nbsp;String&nbsp;getAuthToken()</pre>
-<div class="block">Return the driver's auth token</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the driver's auth token</dd>
 </dl>
 </li>
 </ul>
@@ -428,13 +368,13 @@ public&nbsp;String&nbsp;getAuthToken()</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
