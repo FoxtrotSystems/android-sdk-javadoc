@@ -422,6 +422,10 @@
 <dd>
 <div class="block">Return the <code>Handler</code> object the callback will get posted to.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html#getHandler--">getHandler()</a></span> - Method in class io.foxtrot.android.sdk.route.snapshot.<a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot">RouteSnapshotSyncListener</a></dt>
+<dd>
+<div class="block">Return the <code>Handler</code> object the callback will get posted to.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/state/ErrorStateListener.html#getHandler--">getHandler()</a></span> - Method in class io.foxtrot.android.sdk.state.<a href="io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a></dt>
 <dd>
 <div class="block">Return the <code>Handler</code> object the callback will get posted to.</div>
@@ -796,6 +800,8 @@
 <dd>
 <div class="block">Invoked upon successful login.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html#onUploadComplete-io.foxtrot.android.sdk.route.snapshot.RouteSnapshot-">onUploadComplete(RouteSnapshot)</a></span> - Method in class io.foxtrot.android.sdk.route.snapshot.<a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot">RouteSnapshotSyncListener</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/state/ErrorStateListener.html#onWarning-FoxtrotRoutingWarning-">onWarning(FoxtrotRoutingWarning)</a></span> - Method in class io.foxtrot.android.sdk.state.<a href="io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a></dt>
 <dd>
 <div class="block">Similar to onWarnings(@Nonnull EnumSet<WarningState> warnings) but with added details.</div>
@@ -852,9 +858,9 @@
 <dd>
 <div class="block">Register the <a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteSnapshotSyncListener-RouteSnapshotSyncListener-">registerRouteSnapshotSyncListener(RouteSnapshotSyncListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteSnapshotSyncListener-io.foxtrot.android.sdk.route.snapshot.RouteSnapshotSyncListener-">registerRouteSnapshotSyncListener(RouteSnapshotSyncListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
-<div class="block">Register a <code>RouteSnapshotSyncListener</code>.</div>
+<div class="block">Register a <a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot"><code>RouteSnapshotSyncListener</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">registerRouteStateListener(RouteStateListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
@@ -884,6 +890,12 @@
 <dd>
 <div class="block">A "snapshot" of the actions you've taken on a route.</div>
 </dd>
+<dt><a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot"><span class="typeNameLink">RouteSnapshotSyncListener</span></a> - Class in <a href="io/foxtrot/android/sdk/route/snapshot/package-summary.html">io.foxtrot.android.sdk.route.snapshot</a></dt>
+<dd>
+<div class="block">Abstract class to extend for <a href="io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteSnapshotSyncListener-io.foxtrot.android.sdk.route.snapshot.RouteSnapshotSyncListener-"><code>FoxtrotSDK.registerRouteSnapshotSyncListener(RouteSnapshotSyncListener)</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html#RouteSnapshotSyncListener--">RouteSnapshotSyncListener()</a></span> - Constructor for class io.foxtrot.android.sdk.route.snapshot.<a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot">RouteSnapshotSyncListener</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><span class="typeNameLink">RouteStateListener</span></a> - Class in <a href="io/foxtrot/android/sdk/state/package-summary.html">io.foxtrot.android.sdk.state</a></dt>
 <dd>
 <div class="block">Class to listen for route changed events.</div>
@@ -1032,9 +1044,9 @@
 <dd>
 <div class="block">Unregister the <a href="io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterRouteSnapshotSyncListener-RouteSnapshotSyncListener-">unregisterRouteSnapshotSyncListener(RouteSnapshotSyncListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterRouteSnapshotSyncListener-io.foxtrot.android.sdk.route.snapshot.RouteSnapshotSyncListener-">unregisterRouteSnapshotSyncListener(RouteSnapshotSyncListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
-<div class="block">Unregister a <code>RouteSnapshotSyncListener</code>.</div>
+<div class="block">Unregister a <a href="io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot"><code>RouteSnapshotSyncListener</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">unregisterRouteStateListener(RouteStateListener)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
