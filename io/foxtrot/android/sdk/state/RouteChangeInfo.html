@@ -122,7 +122,17 @@ extends Enum&lt;<a href="../../../../../io/foxtrot/android/sdk/state/RouteChange
  provides additional information about how the route has changed.  You should use this
  additional information to display appropriate messages to the driver. For example, you
  should alert the driver whenever a new route is assigned or the waypoint ordering has
- changed, but you may not want to alert them when only the waypoint ETAs have changed. *
+ changed, but you may not want to alert them when only the waypoint ETAs have changed.
+
+ NOTE: The RouteChangeInfo will alwauys show NEW_ROUTE for the first route emitted when the app is
+ started. Each subsequent <a href="../../../../../io/foxtrot/android/sdk/state/RouteStateListener.html#onRouteChanged-io.foxtrot.common.core.models.route.OptimizedRoute-java.util.EnumSet-"><code>RouteStateListener.onRouteChanged(OptimizedRoute, EnumSet)</code></a>
+ will have an EnumSet<RouteChangeInfo> detailing how the route OptimizedRoute differs from the
+ previously emitted one. Specifically, the RouteChangeInfo is volatile; if the app is killed or
+ the phone turns off, it will reset and show NEW_ROUTE for the next emitted route. If you would
+ like to track beyond this, please use <code>OptimizedRoute#hashCode()</code> to check if a given Route
+ has any components different from another.
+
+
  <p>
  <b>Status:</b>
  <table summary="">
@@ -132,7 +142,11 @@ extends Enum&lt;<a href="../../../../../io/foxtrot/android/sdk/state/RouteChange
    </tr>
    <tr>
      <td>NEW_ROUTE</td>
-     <td>The driver has been assigned to a different route.</td>
+     <td>The emitted route represents a different route (different ID) than the one last given in onRouteChanged().</td>
+   </tr>
+   <tr>
+      <td>LISTENER_REGISTERED</td>
+      <td>This listener was just registered. If available, a route is emitted upon listener registration.</td>
    </tr>
    <tr>
      <td>WAYPOINT_SEQUENCE_CHANGED</td>
@@ -165,12 +179,15 @@ extends Enum&lt;<a href="../../../../../io/foxtrot/android/sdk/state/RouteChange
 <th class="colOne" scope="col">Enum Constant and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/RouteChangeInfo.html#NEW_ROUTE">NEW_ROUTE</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/RouteChangeInfo.html#LISTENER_REGISTERED">LISTENER_REGISTERED</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/RouteChangeInfo.html#ROUTE_ETAS_CHANGED">ROUTE_ETAS_CHANGED</a></span></code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/RouteChangeInfo.html#NEW_ROUTE">NEW_ROUTE</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/RouteChangeInfo.html#ROUTE_ETAS_CHANGED">ROUTE_ETAS_CHANGED</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/RouteChangeInfo.html#WAYPOINT_SEQUENCE_CHANGED">WAYPOINT_SEQUENCE_CHANGED</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -241,6 +258,15 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>NEW_ROUTE</h4>
 <pre>public static final&nbsp;<a href="../../../../../io/foxtrot/android/sdk/state/RouteChangeInfo.html" title="enum in io.foxtrot.android.sdk.state">RouteChangeInfo</a> NEW_ROUTE</pre>
+</li>
+</ul>
+<a name="LISTENER_REGISTERED">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LISTENER_REGISTERED</h4>
+<pre>public static final&nbsp;<a href="../../../../../io/foxtrot/android/sdk/state/RouteChangeInfo.html" title="enum in io.foxtrot.android.sdk.state">RouteChangeInfo</a> LISTENER_REGISTERED</pre>
 </li>
 </ul>
 <a name="WAYPOINT_SEQUENCE_CHANGED">

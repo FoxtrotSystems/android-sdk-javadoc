@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":10,"i2":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":6,"i1":10,"i2":10,"i3":42};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -194,7 +194,7 @@ extends Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -213,8 +213,14 @@ extends Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html#onWarning-FoxtrotRoutingWarning-">onWarning</a></span>(FoxtrotRoutingWarning&nbsp;warning)</code>
+<div class="block">Similar to onWarnings(@Nonnull EnumSet<WarningState> warnings) but with added details.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html#onWarnings-java.util.EnumSet-">onWarnings</a></span>(EnumSet&lt;<a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html" title="enum in io.foxtrot.android.sdk.state">WarningState</a>&gt;&nbsp;warnings)</code>
-<div class="block">Invoked when a warning has been detected.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
 </table>
@@ -287,10 +293,12 @@ extends Object</pre>
 <a name="onWarnings-java.util.EnumSet-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onWarnings</h4>
-<pre>public&nbsp;void&nbsp;onWarnings(EnumSet&lt;<a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html" title="enum in io.foxtrot.android.sdk.state">WarningState</a>&gt;&nbsp;warnings)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;onWarnings(EnumSet&lt;<a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html" title="enum in io.foxtrot.android.sdk.state">WarningState</a>&gt;&nbsp;warnings)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Invoked when a warning has been detected. Handling these warnings are not required, but it is
  suggested to monitor the frequency of warnings. Having too many warnings is a sign of a possible
  programming error such as <a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#BAD_ROUTE_ID"><code>WarningState.BAD_ROUTE_ID</code></a> and <a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#BAD_WAYPOINT_ID"><code>WarningState.BAD_WAYPOINT_ID</code></a>.</div>
@@ -298,6 +306,18 @@ extends Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>warnings</code> - the warnings</dd>
 </dl>
+</li>
+</ul>
+<a name="onWarning-FoxtrotRoutingWarning-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onWarning</h4>
+<pre>public&nbsp;void&nbsp;onWarning(FoxtrotRoutingWarning&nbsp;warning)</pre>
+<div class="block">Similar to onWarnings(@Nonnull EnumSet<WarningState> warnings) but with added details. The
+ <a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html" title="enum in io.foxtrot.android.sdk.state"><code>WarningState</code></a> is still available via <code>FoxtrotRoutingWarning#getType()</code>. The details
+ are available in a map via <code>FoxtrotRoutingWarning#getDetails()</code>.</div>
 </li>
 </ul>
 </li>

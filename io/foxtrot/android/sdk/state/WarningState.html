@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -145,6 +145,11 @@ extends Enum&lt;<a href="../../../../../io/foxtrot/android/sdk/state/WarningStat
      <td>BAD_DELIVERY_ID</td>
      <td>The delivery id passed into <code>FoxtrotSDK</code> is incorrect.</td>
    </tr>
+   <tr>
+     <td>MISSING_ATTEMPT</td>
+     <td>The delivery or waypoint passed into <code>FoxtrotSDK</code> does not have an attempt. For example,
+     this may be raised when trying to UNDO on a delivery with no attempts.</td>
+   </tr>
  </table></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -177,6 +182,9 @@ extends Enum&lt;<a href="../../../../../io/foxtrot/android/sdk/state/WarningStat
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#BAD_WAYPOINT_ID">BAD_WAYPOINT_ID</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#MISSING_ATTEMPT">MISSING_ATTEMPT</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#NETWORK_OFFLINE">NETWORK_OFFLINE</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -199,12 +207,16 @@ extends Enum&lt;<a href="../../../../../io/foxtrot/android/sdk/state/WarningStat
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#getWarning--">getWarning</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#getWarningType--">getWarningType</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html" title="enum in io.foxtrot.android.sdk.state">WarningState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#valueOf-java.lang.String-">valueOf</a></span>(String&nbsp;name)</code>
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html" title="enum in io.foxtrot.android.sdk.state">WarningState</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html#values--">values</a></span>()</code>
 <div class="block">Returns an array containing the constants of this enum type, in
@@ -270,10 +282,19 @@ the order they are declared.</div>
 <a name="BAD_DELIVERY_ID">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>BAD_DELIVERY_ID</h4>
 <pre>public static final&nbsp;<a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html" title="enum in io.foxtrot.android.sdk.state">WarningState</a> BAD_DELIVERY_ID</pre>
+</li>
+</ul>
+<a name="MISSING_ATTEMPT">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>MISSING_ATTEMPT</h4>
+<pre>public static final&nbsp;<a href="../../../../../io/foxtrot/android/sdk/state/WarningState.html" title="enum in io.foxtrot.android.sdk.state">WarningState</a> MISSING_ATTEMPT</pre>
 </li>
 </ul>
 </li>
@@ -329,10 +350,19 @@ not permitted.)</div>
 <a name="getWarning--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getWarning</h4>
 <pre>public&nbsp;String&nbsp;getWarning()</pre>
+</li>
+</ul>
+<a name="getWarningType--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getWarningType</h4>
+<pre>public&nbsp;String&nbsp;getWarningType()</pre>
 </li>
 </ul>
 </li>
