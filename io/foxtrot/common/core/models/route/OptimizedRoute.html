@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":6,"i1":38,"i2":6,"i3":6,"i4":6,"i5":6,"i6":38,"i7":6,"i8":6,"i9":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -118,54 +118,70 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getEndingWarehouse--">getEndingWarehouse</a></span>()</code>
-<div class="block">Return the ending warehouse of this route</div>
+<td class="colFirst"><code>OptimizedTerminus</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getEndingTerminus--">getEndingTerminus</a></span>()</code>
+<div class="block">The place where the route ends</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getEndingWarehouse--">getEndingWarehouse</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">please use getEndingTerminus().</span></div>
+</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getId--">getId</a></span>()</code>
 <div class="block">Return the id for this route</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getName--">getName</a></span>()</code>
 <div class="block">Return the name of this route</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getRemainingRoutePolyline--">getRemainingRoutePolyline</a></span>()</code>
 <div class="block">Return the polyline representing the remainder of the route.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartingWarehouse--">getStartingWarehouse</a></span>()</code>
-<div class="block">Return the starting warehouse of this route</div>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>OptimizedTerminus</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartingTerminus--">getStartingTerminus</a></span>()</code>
+<div class="block">The place where the route begins</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartingWarehouse--">getStartingWarehouse</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">please use getStartingTerminus().</span></div>
+</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartTime--">getStartTime</a></span>()</code>
 <div class="block">Return the start time for this route</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getWaypoints--">getWaypoints</a></span>()</code>
 <div class="block">Return an immutable list of <a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> for this route.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#isOptimizable--">isOptimizable</a></span>()</code>
 <div class="block">Whether or not the route is optimizable.</div>
@@ -249,7 +265,9 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getStartingWarehouse</h4>
-<pre><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a>&nbsp;getStartingWarehouse()</pre>
+<pre>@Deprecated
+<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a>&nbsp;getStartingWarehouse()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">please use getStartingTerminus().</span></div>
 <div class="block">Return the starting warehouse of this route</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -263,11 +281,41 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getEndingWarehouse</h4>
-<pre><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a>&nbsp;getEndingWarehouse()</pre>
+<pre>@Deprecated
+<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a>&nbsp;getEndingWarehouse()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">please use getEndingTerminus().</span></div>
 <div class="block">Return the ending warehouse of this route</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the ending warehouse.</dd>
+</dl>
+</li>
+</ul>
+<a name="getStartingTerminus--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStartingTerminus</h4>
+<pre>OptimizedTerminus&nbsp;getStartingTerminus()</pre>
+<div class="block">The place where the route begins</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <code>OptimizedTerminus</code> where the route begins.</dd>
+</dl>
+</li>
+</ul>
+<a name="getEndingTerminus--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEndingTerminus</h4>
+<pre>OptimizedTerminus&nbsp;getEndingTerminus()</pre>
+<div class="block">The place where the route ends</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <code>OptimizedTerminus</code> where the route ends.</dd>
 </dl>
 </li>
 </ul>

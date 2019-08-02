@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":38,"i1":38,"i2":38,"i3":38,"i4":38,"i5":38};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -98,8 +98,10 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <hr>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <br>
-<pre>public interface <span class="typeNameLabel">OptimizedWarehouse</span></pre>
+<pre>@Deprecated
+public interface <span class="typeNameLabel">OptimizedWarehouse</span></pre>
 <div class="block">An <code>OptimizedWarehouse</code> object after it has been imported into Foxtrot</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -118,7 +120,7 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -126,36 +128,42 @@ var activeTableTab = "activeTableTab";
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getAddress--">getAddress</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the address of this warehouse</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>Long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getDistanceInMetersFromPreviousWaypoint--">getDistanceInMetersFromPreviousWaypoint</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the distance in meters to get to this waypoint from the previous waypoint</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getEta--">getEta</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the estimated time of arrival for this warehouse</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getLocation--">getLocation</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the location of this warehouse</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getName--">getName</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the name of this warehouse</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>Long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html#getTimeInSecondsFromPreviousWaypoint--">getTimeInSecondsFromPreviousWaypoint</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the time in seconds to get to this waypoint from the previous waypoint</div>
 </td>
 </tr>
@@ -181,6 +189,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getLocation</h4>
 <pre><a href="../../../../../../io/foxtrot/common/core/models/Location.html" title="class in io.foxtrot.common.core.models">Location</a>&nbsp;getLocation()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the location of this warehouse</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -195,6 +204,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getName</h4>
 <pre>String&nbsp;getName()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the name of this warehouse</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -209,6 +219,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getAddress</h4>
 <pre>String&nbsp;getAddress()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the address of this warehouse</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -223,6 +234,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getEta</h4>
 <pre>DateTime&nbsp;getEta()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the estimated time of arrival for this warehouse</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -237,6 +249,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getDistanceInMetersFromPreviousWaypoint</h4>
 <pre>Long&nbsp;getDistanceInMetersFromPreviousWaypoint()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the distance in meters to get to this waypoint from the previous waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -251,6 +264,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getTimeInSecondsFromPreviousWaypoint</h4>
 <pre>Long&nbsp;getTimeInSecondsFromPreviousWaypoint()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return the time in seconds to get to this waypoint from the previous waypoint</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

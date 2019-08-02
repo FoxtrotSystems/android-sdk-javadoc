@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":42,"i2":10,"i3":10,"i4":10,"i5":42,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":9,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":42,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":9,"i30":9,"i31":10,"i32":10,"i33":42,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10};
+var methods = {"i0":10,"i1":42,"i2":10,"i3":10,"i4":10,"i5":42,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":9,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":42,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":9,"i29":9,"i30":10,"i31":10,"i32":42,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -218,149 +218,148 @@ extends Object</pre>
 <div class="block">A blocking call to get the list of RouteSnapshots waiting to be uploaded.</div>
 </td>
 </tr>
-
-<tr class="altColor" id="i13">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>static List&lt;String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#getRequiredPermissions--">getRequiredPermissions</a></span>()</code>
 <div class="block">Get the permissions required by the Foxtrot SDK.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i14">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>Boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#isLoggedIn-io.foxtrot.common.core.models.Driver-">isLoggedIn</a></span>(<a href="../../../../io/foxtrot/common/core/models/Driver.html" title="class in io.foxtrot.common.core.models">Driver</a>&nbsp;driver)</code>
 <div class="block">Check if the <code>Driver</code> has already logged in.</div>
 </td>
 </tr>
-<tr class="altColor" id="i15">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#isSetup--">isSetup</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i16">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#login-io.foxtrot.common.core.models.Driver-">login</a></span>(<a href="../../../../io/foxtrot/common/core/models/Driver.html" title="class in io.foxtrot.common.core.models">Driver</a>&nbsp;driver)</code>
 <div class="block">Log in the driver to Foxtrot.</div>
 </td>
 </tr>
-<tr class="altColor" id="i17">
+<tr class="altColor" id="i16">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#loginDriverWithToken-io.foxtrot.common.core.models.Driver-java.lang.String-">loginDriverWithToken</a></span>(<a href="../../../../io/foxtrot/common/core/models/Driver.html" title="class in io.foxtrot.common.core.models">Driver</a>&nbsp;driver,
                     String&nbsp;driverLoginToken)</code>
 <div class="block">Log in the driver to Foxtrot using the driver's login token.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i18">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#logout--">logout</a></span>()</code>
 <div class="block">Log out the current driver.</div>
 </td>
 </tr>
-<tr class="altColor" id="i19">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#markDeliveriesToVisitLaterForDeliveries-java.util.Map-">markDeliveriesToVisitLaterForDeliveries</a></span>(Map&lt;String,<a href="../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater</a>&gt;&nbsp;visitLaterMap)</code>
 <div class="block">A batch version of markDeliveryToVisitLaterForDelivery</div>
 </td>
 </tr>
-<tr class="rowColor" id="i20">
+<tr class="rowColor" id="i19">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#markDeliveryToVisitLater-java.lang.String-io.foxtrot.common.core.models.route.DeliveryVisitLater-">markDeliveryToVisitLater</a></span>(String&nbsp;waypointId,
                         <a href="../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater</a>&nbsp;visitLater)</code>
 <div class="block">Mark this <a href="../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> to be visited later.</div>
 </td>
 </tr>
-<tr class="altColor" id="i21">
+<tr class="altColor" id="i20">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#markDeliveryToVisitLaterForDelivery-java.lang.String-io.foxtrot.common.core.models.route.DeliveryVisitLater-">markDeliveryToVisitLaterForDelivery</a></span>(String&nbsp;deliveryId,
                                    <a href="../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater</a>&nbsp;visitLater)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr class="rowColor" id="i22">
+<tr class="rowColor" id="i21">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#refreshAssignedRoutes--">refreshAssignedRoutes</a></span>()</code>
 <div class="block">Refresh route(s) assigned to the current driver</div>
 </td>
 </tr>
-<tr class="altColor" id="i23">
+<tr class="altColor" id="i22">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerErrorStateListener-io.foxtrot.android.sdk.state.ErrorStateListener-">registerErrorStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a>&nbsp;errorStateListener)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 </td>
 </tr>
-<tr class="rowColor" id="i24">
+<tr class="rowColor" id="i23">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">registerLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor" id="i25">
+<tr class="altColor" id="i24">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteSnapshotSyncListener-io.foxtrot.android.sdk.route.snapshot.RouteSnapshotSyncListener-">registerRouteSnapshotSyncListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot">RouteSnapshotSyncListener</a>&nbsp;listener)</code>
 <div class="block">Register a <a href="../../../../io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot"><code>RouteSnapshotSyncListener</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i26">
+<tr class="rowColor" id="i25">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#registerRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">registerRouteStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</code>
 <div class="block">Register the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a></div>
 </td>
 </tr>
 
-<tr class="altColor" id="i28">
+<tr class="altColor" id="i27">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#resumeSession-io.foxtrot.common.core.models.Driver-">resumeSession</a></span>(<a href="../../../../io/foxtrot/common/core/models/Driver.html" title="class in io.foxtrot.common.core.models">Driver</a>&nbsp;driver)</code>
 <div class="block">Resume the previous session if the driver has already successfully logged in on this device.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i29">
+<tr class="rowColor" id="i28">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#setup-android.content.Context-">setup</a></span>(android.content.Context&nbsp;context)</code>
 <div class="block">Setup the FoxtrotSDK with the application <code>context</code>.</div>
 </td>
 </tr>
-<tr class="altColor" id="i30">
+<tr class="altColor" id="i29">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#setup-android.content.Context-java.lang.String-">setup</a></span>(android.content.Context&nbsp;context,
      String&nbsp;dcApiKey)</code>
 <div class="block">Setup the FoxtrotSDK with the application <code>context</code> and <code>dcApiKey</code>.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i31">
+<tr class="rowColor" id="i30">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttempt-java.lang.String-">undoDeliveryAttempt</a></span>(String&nbsp;waypointId)</code>
 <div class="block">Undo the previous <a href="../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route"><code>DeliveryAttempt</code></a> that was made to an <a href="../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor" id="i32">
+<tr class="altColor" id="i31">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttemptForDeliveries-java.util.Set-">undoDeliveryAttemptForDeliveries</a></span>(Set&lt;String&gt;&nbsp;deliveryIds)</code>
 <div class="block">A batch version of undoDeliveryAttemptForDelivery</div>
 </td>
 </tr>
-<tr class="rowColor" id="i33">
+<tr class="rowColor" id="i32">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#undoDeliveryAttemptForDelivery-java.lang.String-">undoDeliveryAttemptForDelivery</a></span>(String&nbsp;deliveryId)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr class="altColor" id="i34">
+<tr class="altColor" id="i33">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterErrorStateListener-io.foxtrot.android.sdk.state.ErrorStateListener-">unregisterErrorStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state">ErrorStateListener</a>&nbsp;errorStateListener)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/state/ErrorStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>ErrorStateListener</code></a></div>
 </td>
 </tr>
-<tr class="rowColor" id="i35">
+<tr class="rowColor" id="i34">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterLoginCallback-io.foxtrot.android.sdk.auth.controllers.LoginCallback-">unregisterLoginCallback</a></span>(<a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers">LoginCallback</a>&nbsp;loginCallback)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/auth/controllers/LoginCallback.html" title="class in io.foxtrot.android.sdk.auth.controllers"><code>LoginCallback</code></a>.</div>
 </td>
 </tr>
-<tr class="altColor" id="i36">
+<tr class="altColor" id="i35">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterRouteSnapshotSyncListener-io.foxtrot.android.sdk.route.snapshot.RouteSnapshotSyncListener-">unregisterRouteSnapshotSyncListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot">RouteSnapshotSyncListener</a>&nbsp;listener)</code>
 <div class="block">Unregister a <a href="../../../../io/foxtrot/android/sdk/route/snapshot/RouteSnapshotSyncListener.html" title="class in io.foxtrot.android.sdk.route.snapshot"><code>RouteSnapshotSyncListener</code></a>.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i37">
+<tr class="rowColor" id="i36">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/foxtrot/android/sdk/FoxtrotSDK.html#unregisterRouteStateListener-io.foxtrot.android.sdk.state.RouteStateListener-">unregisterRouteStateListener</a></span>(<a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state">RouteStateListener</a>&nbsp;routeStateListener)</code>
 <div class="block">Unregister the <a href="../../../../io/foxtrot/android/sdk/state/RouteStateListener.html" title="class in io.foxtrot.android.sdk.state"><code>RouteStateListener</code></a></div>
@@ -968,8 +967,6 @@ public&nbsp;void&nbsp;undoDeliveryAttemptForDelivery(String&nbsp;deliveryId)</pr
 </dl>
 </li>
 </ul>
-
-
 
 
 
