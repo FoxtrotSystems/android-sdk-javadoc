@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":38,"i2":6,"i3":6,"i4":6,"i5":6,"i6":38,"i7":6,"i8":6,"i9":6};
+var methods = {"i0":6,"i1":38,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":38,"i8":6,"i9":6,"i10":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -150,18 +150,24 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version">OptimizedRouteVersion</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getOptimizedRouteVersion--">getOptimizedRouteVersion</a></span>()</code>
+<div class="block">An object representing the current state and sequence of the route</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getRemainingRoutePolyline--">getRemainingRoutePolyline</a></span>()</code>
 <div class="block">Return the polyline representing the remainder of the route.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>OptimizedTerminus</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartingTerminus--">getStartingTerminus</a></span>()</code>
 <div class="block">The place where the route begins</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWarehouse.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWarehouse</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartingWarehouse--">getStartingWarehouse</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -169,19 +175,19 @@ var activeTableTab = "activeTableTab";
 </div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartTime--">getStartTime</a></span>()</code>
 <div class="block">Return the start time for this route</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>List&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#getWaypoints--">getWaypoints</a></span>()</code>
 <div class="block">Return an immutable list of <a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route"><code>OptimizedWaypoint</code></a> for this route.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedRoute.html#isOptimizable--">isOptimizable</a></span>()</code>
 <div class="block">Whether or not the route is optimizable.</div>
@@ -332,6 +338,20 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the encoded polyline.</dd>
+</dl>
+</li>
+</ul>
+<a name="getOptimizedRouteVersion--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOptimizedRouteVersion</h4>
+<pre><a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version">OptimizedRouteVersion</a>&nbsp;getOptimizedRouteVersion()</pre>
+<div class="block">An object representing the current state and sequence of the route</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an OptimizedRouteVersion representing the current sequence of the route</dd>
 </dl>
 </li>
 </ul>

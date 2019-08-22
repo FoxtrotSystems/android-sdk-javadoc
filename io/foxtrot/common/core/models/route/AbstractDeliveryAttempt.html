@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -148,16 +148,22 @@ extends Object</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version">OptimizedRouteVersion</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getOptimizedRouteVersion--">getOptimizedRouteVersion</a></span>()</code>
+<div class="block">Return the visible route version, if set when the attempt was made.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route">DeliveryStatus</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getStatus--">getStatus</a></span>()</code>
 <div class="block">Return the status attached to this attempt</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -222,6 +228,20 @@ extends Object</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the delivery code</dd>
+</dl>
+</li>
+</ul>
+<a name="getOptimizedRouteVersion--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOptimizedRouteVersion</h4>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version">OptimizedRouteVersion</a>&nbsp;getOptimizedRouteVersion()</pre>
+<div class="block">Return the visible route version, if set when the attempt was made.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the OptimizedRouteVersion supplied when the attempt was made, if any.</dd>
 </dl>
 </li>
 </ul>
