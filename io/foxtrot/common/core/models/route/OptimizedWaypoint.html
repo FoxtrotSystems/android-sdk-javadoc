@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":38,"i12":6,"i13":6,"i14":6,"i15":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -118,7 +118,7 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -192,7 +192,7 @@ var activeTableTab = "activeTableTab";
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getOperatingHours--">getOperatingHours</a></span>()</code>
-<div class="block">Return an immutable list of operating hours at this waypoint.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
@@ -205,6 +205,19 @@ var activeTableTab = "activeTableTab";
 <td class="colFirst"><code>Long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getTimeInSecondsFromPreviousWaypoint--">getTimeInSecondsFromPreviousWaypoint</a></span>()</code>
 <div class="block">Return the time in seconds to get to this waypoint from the previous waypoint</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>Collection&lt;OptimizedTimeWindow&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getTimeWindows--">getTimeWindows</a></span>()</code>
+<div class="block">Return an immutable list of time windows at this waypoint.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>Long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getWaitingTimeInSeconds--">getWaitingTimeInSeconds</a></span>()</code>
+<div class="block">Return the estimated amount of time driver will have to wait until this waypoint's closest
+ Time Window starts.</div>
 </td>
 </tr>
 </table>
@@ -368,8 +381,24 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getOperatingHours</h4>
-<pre>Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a>&gt;&nbsp;getOperatingHours()</pre>
+<pre>@Deprecated
+Collection&lt;<a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a>&gt;&nbsp;getOperatingHours()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Return an immutable list of operating hours at this waypoint. The list may be empty.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the operating hours</dd>
+</dl>
+</li>
+</ul>
+<a name="getTimeWindows--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTimeWindows</h4>
+<pre>Collection&lt;OptimizedTimeWindow&gt;&nbsp;getTimeWindows()</pre>
+<div class="block">Return an immutable list of time windows at this waypoint. The list may be empty.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the operating hours</dd>
@@ -407,7 +436,7 @@ var activeTableTab = "activeTableTab";
 <a name="getContactPhone--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getContactPhone</h4>
 <pre>String&nbsp;getContactPhone()</pre>
@@ -415,6 +444,21 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the phone number</dd>
+</dl>
+</li>
+</ul>
+<a name="getWaitingTimeInSeconds--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getWaitingTimeInSeconds</h4>
+<pre>Long&nbsp;getWaitingTimeInSeconds()</pre>
+<div class="block">Return the estimated amount of time driver will have to wait until this waypoint's closest
+ Time Window starts.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the waiting time in seconds</dd>
 </dl>
 </li>
 </ul>

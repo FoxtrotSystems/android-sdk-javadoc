@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":42,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -131,7 +131,7 @@ extends Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -150,11 +150,17 @@ extends Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html#setOperatingHours-io.foxtrot.common.core.models.route.OperatingHours-">setOperatingHours</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a>&nbsp;operatingHours)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html#setOperatingHours-io.foxtrot.common.core.models.route.OperatingHours-">setOperatingHours</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a>&nbsp;operatingHours)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html#setRouteVersion-io.foxtrot.common.core.models.route.version.OptimizedRouteVersion-">setRouteVersion</a></span>(<a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version">OptimizedRouteVersion</a>&nbsp;optimizedRouteVersion)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html#setTimeWindow-TimeWindow-">setTimeWindow</a></span>(TimeWindow&nbsp;timeWindow)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -184,7 +190,19 @@ extends Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setOperatingHours</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a>&nbsp;setOperatingHours(<a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a>&nbsp;operatingHours)</pre>
+<pre>@Deprecated
+public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a>&nbsp;setOperatingHours(<a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a>&nbsp;operatingHours)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Please use setTimeWindow() instead.</div>
+</li>
+</ul>
+<a name="setTimeWindow-TimeWindow-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTimeWindow</h4>
+<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a>&nbsp;setTimeWindow(TimeWindow&nbsp;timeWindow)</pre>
 </li>
 </ul>
 <a name="setNotes-java.lang.String-">

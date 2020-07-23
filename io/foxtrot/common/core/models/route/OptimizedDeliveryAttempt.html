@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,21 +143,27 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>Double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getQuantity--">getQuantity</a></span>()</code>
+<div class="block">The quantity given when Delivery Attempt was made.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route">DeliveryStatus</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getStatus--">getStatus</a></span>()</code>
 <div class="block">Return the <a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryStatus.html" title="enum in io.foxtrot.common.core.models.route"><code>DeliveryStatus</code></a></div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>DateTime</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getTimestamp--">getTimestamp</a></span>()</code>
 <div class="block">Return the timestamp for this delivery status</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version">OptimizedRouteVersion</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getVisibleRouteVersion--">getVisibleRouteVersion</a></span>()</code>
-<div class="block">The route version given when the delivery attempt was made.</div>
+<div class="block">The route version given when the Delivery Attempt was made.</div>
 </td>
 </tr>
 </table>
@@ -248,11 +254,11 @@ var activeTableTab = "activeTableTab";
 <a name="getVisibleRouteVersion--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getVisibleRouteVersion</h4>
 <pre><a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version">OptimizedRouteVersion</a>&nbsp;getVisibleRouteVersion()</pre>
-<div class="block">The route version given when the delivery attempt was made.</div>
+<div class="block">The route version given when the Delivery Attempt was made.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>@Nullable: An <a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version"><code>OptimizedRouteVersion</code></a> representing the visible route version
@@ -260,6 +266,23 @@ var activeTableTab = "activeTableTab";
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.Builder.html#setRouteVersion-io.foxtrot.common.core.models.route.version.OptimizedRouteVersion-"><code>DeliveryAttempt.Builder.setRouteVersion(OptimizedRouteVersion)</code></a>, 
 <a href="../../../../../../io/foxtrot/common/core/models/route/version/OptimizedRouteVersion.html" title="class in io.foxtrot.common.core.models.route.version"><code>OptimizedRouteVersion</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getQuantity--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getQuantity</h4>
+<pre>Double&nbsp;getQuantity()</pre>
+<div class="block">The quantity given when Delivery Attempt was made.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>@Nullable: The quantity of the Delivery Attempt. If the returned value is null, no
+ quantity was given when the Attempt was made.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../io/foxtrot/common/core/models/route/DeliveryAttempt.Builder.html#setQuantity-java.lang.Double-"><code>DeliveryAttempt.Builder.setQuantity(Double)</code></a></dd>
 </dl>
 </li>
 </ul>

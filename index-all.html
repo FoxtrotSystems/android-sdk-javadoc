@@ -86,6 +86,11 @@
 <dd>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#addDeliveryAttempts-java.util.Map-">addDeliveryAttempts(Map&lt;String, Collection&lt;DeliveryAttempt&gt;&gt;)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">Like addDeliveryAttemptsForDeliveries(@Nonnull Map<String, DeliveryAttempt> attemptMap)
+ except that multiple attempts can be issued per Delivery ID.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#addDeliveryAttemptsForDeliveries-java.util.Map-">addDeliveryAttemptsForDeliveries(Map&lt;String, DeliveryAttempt&gt;)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
 <div class="block">A batch version of addDeliveryAttemptForDelivery</div>
@@ -411,6 +416,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedOperatingHours.html#getEnd--">getEnd()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a></dt>
 <dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Return when the OperatingHours end</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html#getEndingTerminus--">getEndingTerminus()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a></dt>
@@ -562,11 +568,13 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#getOperatingHours--">getOperatingHours()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttemptWithOperatingHours</a></dt>
 <dd>
-<div class="block">Return the OperatingHours</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">please use getTimeWindow()</span></div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getOperatingHours--">getOperatingHours()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a></dt>
 <dd>
-<div class="block">Return an immutable list of operating hours at this waypoint.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Waypoint.html#getOperatingHours--">getOperatingHours()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Waypoint.html" title="class in io.foxtrot.common.core.models.route">Waypoint</a></dt>
 <dd>
@@ -584,6 +592,10 @@
 <dd>
 <div class="block">A blocking call to get the list of RouteSnapshots waiting to be uploaded.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html#getPlannedStartTime--">getPlannedStartTime()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a></dt>
+<dd>
+<div class="block">The planned start time for this route</div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/Vehicle.html#getPlateNumber--">getPlateNumber()</a></span> - Method in class io.foxtrot.common.core.models.<a href="io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a></dt>
 <dd>
 <div class="block">Return the vehicle's plateNumber</div>
@@ -596,6 +608,8 @@
 <dd>
 <div class="block">Return the product name</div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getQuantity--">getQuantity()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttempt</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Delivery.html#getQuantity--">getQuantity()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Delivery.html" title="class in io.foxtrot.common.core.models.route">Delivery</a></dt>
 <dd>
 <div class="block">Return the quantity of the product</div>
@@ -603,6 +617,10 @@
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedDelivery.html#getQuantity--">getQuantity()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedDelivery.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDelivery</a></dt>
 <dd>
 <div class="block">Return the quantity of the product</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getQuantity--">getQuantity()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDeliveryAttempt</a></dt>
+<dd>
+<div class="block">The quantity given when Delivery Attempt was made.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html#getRemainingRoutePolyline--">getRemainingRoutePolyline()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a></dt>
 <dd>
@@ -628,6 +646,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedOperatingHours.html#getStart--">getStart()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route">OptimizedOperatingHours</a></dt>
 <dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 <div class="block">Return when the OperatingHours start</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartingTerminus--">getStartingTerminus()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a></dt>
@@ -646,7 +665,9 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html#getStartTime--">getStartTime()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a></dt>
 <dd>
-<div class="block">Return the start time for this route</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">renamed to getPlannedStartTime()</span></div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Route.html#getStartTime--">getStartTime()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Route.html" title="class in io.foxtrot.common.core.models.route">Route</a></dt>
 <dd>
@@ -675,6 +696,14 @@
 <dd>
 <div class="block">Return the timestamp for this delivery status</div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#getTimeWindow--">getTimeWindow()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttemptWithOperatingHours</a></dt>
+<dd>
+<div class="block">Return the Time Window</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getTimeWindows--">getTimeWindows()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a></dt>
+<dd>
+<div class="block">Return an immutable list of time windows at this waypoint.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/state/FoxtrotRoutingWarning.html#getType--">getType()</a></span> - Method in class io.foxtrot.android.sdk.state.<a href="io/foxtrot/android/sdk/state/FoxtrotRoutingWarning.html" title="class in io.foxtrot.android.sdk.state">FoxtrotRoutingWarning</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/state/ErrorState.html#getTypeName--">getTypeName()</a></span> - Method in enum io.foxtrot.android.sdk.state.<a href="io/foxtrot/android/sdk/state/ErrorState.html" title="enum in io.foxtrot.android.sdk.state">ErrorState</a></dt>
@@ -685,7 +714,12 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html#getVisibleRouteVersion--">getVisibleRouteVersion()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedDeliveryAttempt.html" title="interface in io.foxtrot.common.core.models.route">OptimizedDeliveryAttempt</a></dt>
 <dd>
-<div class="block">The route version given when the delivery attempt was made.</div>
+<div class="block">The route version given when the Delivery Attempt was made.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html#getWaitingTimeInSeconds--">getWaitingTimeInSeconds()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedWaypoint.html" title="interface in io.foxtrot.common.core.models.route">OptimizedWaypoint</a></dt>
+<dd>
+<div class="block">Return the estimated amount of time driver will have to wait until this waypoint's closest
+ Time Window starts.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Route.html#getWarehouse--">getWarehouse()</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Route.html" title="class in io.foxtrot.common.core.models.route">Route</a></dt>
 <dd>
@@ -735,6 +769,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/Vehicle.html#hashCode--">hashCode()</a></span> - Method in class io.foxtrot.common.core.models.<a href="io/foxtrot/common/core/models/Vehicle.html" title="class in io.foxtrot.common.core.models">Vehicle</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html#hasRouteStarted--">hasRouteStarted()</a></span> - Method in interface io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route">OptimizedRoute</a></dt>
+<dd>
+<div class="block">Indicates whether <a href="io/foxtrot/android/sdk/FoxtrotSDK.html#startRoute-java.lang.String-"><code>FoxtrotSDK.startRoute(String)</code></a> has been called
+ for this route.</div>
+</dd>
 </dl>
 <a name="I:I">
 <!--   -->
@@ -877,7 +916,7 @@
 </dd>
 <dt><a href="io/foxtrot/common/core/models/route/OptimizedOperatingHours.html" title="interface in io.foxtrot.common.core.models.route"><span class="typeNameLink">OptimizedOperatingHours</span></a> - Interface in <a href="io/foxtrot/common/core/models/route/package-summary.html">io.foxtrot.common.core.models.route</a></dt>
 <dd>
-<div class="block">Contains the description of the operating hours</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
 </dd>
 <dt><a href="io/foxtrot/common/core/models/route/OptimizedRoute.html" title="interface in io.foxtrot.common.core.models.route"><span class="typeNameLink">OptimizedRoute</span></a> - Interface in <a href="io/foxtrot/common/core/models/route/package-summary.html">io.foxtrot.common.core.models.route</a></dt>
 <dd>
@@ -1010,9 +1049,13 @@
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html#setNotes-java.lang.String-">setNotes(String)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryReattempt.Builder.html#setOperatingHours-io.foxtrot.common.core.models.route.OperatingHours-">setOperatingHours(OperatingHours)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryReattempt.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryReattempt.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html#setOperatingHours-io.foxtrot.common.core.models.route.OperatingHours-">setOperatingHours(OperatingHours)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Waypoint.Builder.html#setOperatingHours-java.util.Collection-">setOperatingHours(Collection&lt;OperatingHours&gt;)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Waypoint.Builder.html" title="class in io.foxtrot.common.core.models.route">Waypoint.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/Vehicle.Builder.html#setPlateNumber-java.lang.String-">setPlateNumber(String)</a></span> - Method in class io.foxtrot.common.core.models.<a href="io/foxtrot/common/core/models/Vehicle.Builder.html" title="class in io.foxtrot.common.core.models">Vehicle.Builder</a></dt>
@@ -1020,6 +1063,8 @@
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Delivery.Builder.html#setProduct-java.lang.String-">setProduct(String)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Delivery.Builder.html" title="class in io.foxtrot.common.core.models.route">Delivery.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Delivery.Builder.html#setQuantity-java.lang.Double-">setQuantity(Double)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Delivery.Builder.html" title="class in io.foxtrot.common.core.models.route">Delivery.Builder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryAttempt.Builder.html#setQuantity-java.lang.Double-">setQuantity(Double)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryAttempt.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryAttempt.Builder.html#setRouteVersion-io.foxtrot.common.core.models.route.version.OptimizedRouteVersion-">setRouteVersion(OptimizedRouteVersion)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryAttempt.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt.Builder</a></dt>
 <dd>&nbsp;</dd>
@@ -1037,6 +1082,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryAttempt.Builder.html#setStatus-io.foxtrot.common.core.models.route.DeliveryStatus-">setStatus(DeliveryStatus)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryAttempt.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryAttempt.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryReattempt.Builder.html#setTimeWindow-TimeWindow-">setTimeWindow(TimeWindow)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryReattempt.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryReattempt.Builder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html#setTimeWindow-TimeWindow-">setTimeWindow(TimeWindow)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/DeliveryVisitLater.Builder.html" title="class in io.foxtrot.common.core.models.route">DeliveryVisitLater.Builder</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#setup-android.content.Context-java.lang.String-">setup(Context, String)</a></span> - Static method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
 <dd>
 <div class="block">Setup the FoxtrotSDK with the application <code>context</code> and <code>dcApiKey</code>.</div>
@@ -1053,6 +1102,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/foxtrot/common/core/models/route/Route.Builder.html#setWaypoints-java.util.Collection-">setWaypoints(Collection&lt;Waypoint&gt;)</a></span> - Method in class io.foxtrot.common.core.models.route.<a href="io/foxtrot/common/core/models/route/Route.Builder.html" title="class in io.foxtrot.common.core.models.route">Route.Builder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/foxtrot/android/sdk/FoxtrotSDK.html#startRoute-java.lang.String-">startRoute(String)</a></span> - Method in class io.foxtrot.android.sdk.<a href="io/foxtrot/android/sdk/FoxtrotSDK.html" title="class in io.foxtrot.android.sdk">FoxtrotSDK</a></dt>
+<dd>
+<div class="block">Start a route.</div>
+</dd>
 </dl>
 <a name="I:T">
 <!--   -->

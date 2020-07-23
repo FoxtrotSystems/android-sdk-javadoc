@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":42,"i2":10,"i3":10,"i4":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -131,7 +131,7 @@ extends <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractD
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -143,14 +143,22 @@ extends <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractD
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#getOperatingHours--">getOperatingHours</a></span>()</code>
-<div class="block">Return the OperatingHours</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">please use getTimeWindow()</span></div>
+</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>TimeWindow</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#getTimeWindow--">getTimeWindow</a></span>()</code>
+<div class="block">Return the Time Window</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttemptWithOperatingHours.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -160,7 +168,7 @@ extends <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractD
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.foxtrot.common.core.models.route.<a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html" title="class in io.foxtrot.common.core.models.route">AbstractDeliveryAttempt</a></h3>
-<code><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getDeliveryCode--">getDeliveryCode</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getNotes--">getNotes</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getOptimizedRouteVersion--">getOptimizedRouteVersion</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getStatus--">getStatus</a></code></li>
+<code><a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getDeliveryCode--">getDeliveryCode</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getNotes--">getNotes</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getOptimizedRouteVersion--">getOptimizedRouteVersion</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getQuantity--">getQuantity</a>, <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractDeliveryAttempt.html#getStatus--">getStatus</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.Object">
@@ -189,11 +197,27 @@ extends <a href="../../../../../../io/foxtrot/common/core/models/route/AbstractD
 <ul class="blockList">
 <li class="blockList">
 <h4>getOperatingHours</h4>
-<pre>public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a>&nbsp;getOperatingHours()</pre>
+<pre>@Deprecated
+public&nbsp;<a href="../../../../../../io/foxtrot/common/core/models/route/OperatingHours.html" title="class in io.foxtrot.common.core.models.route">OperatingHours</a>&nbsp;getOperatingHours()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">please use getTimeWindow()</span></div>
 <div class="block">Return the OperatingHours</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the OperatingHours</dd>
+</dl>
+</li>
+</ul>
+<a name="getTimeWindow--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTimeWindow</h4>
+<pre>public&nbsp;TimeWindow&nbsp;getTimeWindow()</pre>
+<div class="block">Return the Time Window</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>TimeWindow</code></dd>
 </dl>
 </li>
 </ul>
